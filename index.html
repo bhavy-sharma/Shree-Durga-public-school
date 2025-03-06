@@ -3,67 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shree Durga High Public School</title>
+    <title>School Website Layout</title>
     <link rel="stylesheet" href="page.css">
+
+    <script>
+        function toggleDropdown() {
+            var dropdown = document.querySelector(".dropdown");
+            dropdown.style.display = (dropdown.style.display === "block") ? "none" : "block";
+        }
+    </script>
 </head>
 <body>
-    <!-- Header Section -->
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Admissions</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-        <div class="logo">
-            <img src="logo.png" alt="School Logo">
+    <div class="container">
+        <div class="header">
+            <div class="shree">Shree Durga Public School </div>
+            <div class="menu" onclick="toggleDropdown()">☰
+                <div class="dropdown">
+                    <a href="#">Home</a>
+                    <a href="#">About</a>
+                    <a href="#">Contact</a>
+                </div>
+            </div>
         </div>
-        <div class="contact-info">
-            <p>Phone: 01234 567890</p>
-            <p>Email: [info@shreedurgahighschool.com](mailto:info@shreedurgahighschool.com)</p>
-        </div>
-    </header>
+        <div class="slider">
+            <button class="arrow1 "><</button>
+            <img src="img/1.jpeg" alt="Image">
+            <img src="img/2.jpeg" alt="Image">
+            <img src="img/3.jpeg" alt="Image">
+            <img src="img/4.jpeg" alt="iamge">
+            <img src="img/5.jpeg" alt="">
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="background-image">
-            <img src="background-image.jpg" alt="Background Image">
+            <button class="arrow2">></button>
         </div>
-        <div class="hero-content">
-            <h1>Welcome to Shree Durga High Public School</h1>
-            <p>We provide a holistic education that prepares students for success.</p>
-            <button>Learn More</button>
-        </div>
-    </section>
+        <div>
 
-    <!-- Features Section -->
-    <section class="features">
-        <h2>Our Features</h2>
-        <div class="feature-cards">
-            <div class="feature-card">
-                <h3>Experienced Faculty</h3>
-                <p>Our teachers are experienced and dedicated to providing a high-quality education.</p>
-            </div>
-            <div class="feature-card">
-                <h3>State-of-the-Art Infrastructure</h3>
-                <p>We have modern facilities and resources that support student learning.</p>
-            </div>
-            <div class="feature-card">
-                <h3>Holistic Education</h3>
-                <p>We provide a well-rounded education that prepares students for success in all areas of life.</p>
+        </div>
+        
+        <div class="about">
+            <h2 class="teacher">Ours Teacher and Tuitor </h2>
+            <div class="about-teacher">
+                <div id="container">
+                    <div class="card">
+                        <img src="img/1.jpeg" alt="">
+                        <div class="card_details">
+                           
+                            <div class="name">Earth Planet</div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, ipsam laudantium optio eveniet architecto laboriosam? Maiores tempora maxime delectus dicta quidem est! Vel molestiae sint aliquid inventore alias quis nam.</p>
+                        
+                        </div>
+                    </div>  
+                </div>
             </div>
         </div>
-    </section>
-
-    <!-- Testimonials Section -->
-    <section class="testimonials">
-        <h2>What Our Students Say</h2>
-        <div class="testimonial-cards">
-            <div class="testimonial-card">
-                <p>"I love the supportive community at Shree Durga High Public School."</p>
-                <p>— Student Name</p>
+        <div class="form-section">
+            <h2>Form</h2>
+            <div class="form-container">
+                <div class="form-group">
+                    <label for="first-name">First name *</label>
+                    <input type="text" id="first-name" placeholder="Enter a first name.">
+                    <span>ⓘ Enter a first name.</span>
+                </div>
+                <div class="form-group">
+                    <label for="last-name">Last name *</label>
+                    <input type="text" id="last-name" placeholder="Enter a last name.">
+                    <span>ⓘ Enter a last name.</span>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email *</label>
+                    <input type="email" id="email" placeholder="Enter an email address like example@mysite.com.">
+                    <span>ⓘ Enter an email address like example@mysite.com.</span>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone</label>
+                    <input type="text" id="phone" placeholder="Enter your phone number.">
+                </div>
             </div>
-            <div class="testimonial-card">
-                <p>"The teachers are knowledgeable and always willing to help."</p>
-                <p>— Parent Name</p
+        </div>
+        </div>
+        <div class="footer">
+            Footer
+        </div>
+    </div>
+</body>
+</html>
