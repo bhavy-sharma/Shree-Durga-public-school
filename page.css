@@ -1,253 +1,271 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Sigmar&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Sigmar&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500;600&display=swap");
+
+/* CSS Variables for Colors */
+:root {
+  --primary-color: #4caf50;
+  --secondary-color: #bf2222;
+  --background-color: #eaeff1;
+  --text-color: #333;
+  --white-color: #fff;
+  --gray-color: #7f8c9b;
+  --highlight-color: #0077ff;
+  --highlight-hover-color: #e0efff;
+}
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
-  font-family: Arial, sans-serif;
-  background: #bf2222;
+  font-family: "Raleway", sans-serif;
+  background: var(--background-color);
   text-align: center;
 }
+
 .header {
-  background: #4caf50;
+  background: var(--primary-color);
   padding: 15px;
-  color: white;
+  color: var(--white-color);
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  /* border-radius: 8px; */
   position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-   
-    z-index: 1; 
-    transition: top 0.3s ease-in-out; 
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  transition: top 0.3s ease-in-out;
 }
-.header img{
+
+.header img {
   width: 50px;
-  height:50px;
+  height: 50px;
 }
+
 .menu {
-    cursor: pointer;
+  cursor: pointer;
 }
+
 .header.hidden {
-    top: -100px; 
+  top: -100px;
 }
+
 .shree {
   font-size: 20px;
   font-family: "Sigmar", sans-serif;
-  font-weight: 400;
-  font-style: normal;
 }
+
 .menu {
   font-size: 24px;
-  cursor: pointer;
   position: relative;
 }
+
 .dropdown {
   display: none;
   position: absolute;
   right: 0;
   top: 40px;
-  background: white;
+  background: var(--white-color);
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-  /* border-radius: 5px; */
   width: 150px;
 }
+
 .dropdown a {
   display: block;
   padding: 10px;
   text-decoration: none;
-  color: #333;
+  color: var(--text-color);
   text-align: left;
 }
+
 .dropdown a:hover {
   background: #f0f0f0;
 }
+
 .slider {
-  background: white;
+  background: var(--white-color);
   padding: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 10px;
-  /* border-radius: 8px; */
+  margin-top: 65px;
 }
-/* .arrow1{
-  margin-right:100px;
 
-} */
- .slider{
-    margin-top: 65px;
- }
 .slider img {
   width: 100px;
   height: 100px;
-  /* border-radius: 5px; */
 }
-.about-school{
-    height: 80vh;
-    width: 100%;
-    background-color: rgb(13, 158, 98);
-    font-family: "Playfair Display", serif;
-  font-optical-sizing: auto;
-  font-style: normal;
+
+.about-school {
+  height: 80vh;
+  width: 100%;
+  background-color: rgb(13, 158, 98);
+  font-family: "Playfair Display", serif;
   text-align: left;
-  padding: 10PX;
+  padding: 10px;
 }
+
 .about {
-    background-color: #edca8e;
+  background-color: #edca8e;
   padding: 15px;
-  /* border-radius: 10px; */
-  
 }
-.card{
-    background: transparent;
-    border: none;
+
+.card {
+  background: transparent;
+  border: none;
 }
-.card img{
-    border-radius: 0;
+
+.card img {
+  border-radius: 0;
 }
+
 .about-teacher {
   display: flex;
   justify-content: center;
   gap: 15px;
   flex-wrap: wrap;
 }
+
 .about-teacher section {
-  background: white;
+  background: var(--white-color);
   width: 100px;
   height: 100px;
   border-radius: 5px;
 }
-.teacher {
+
+.teacher,
+.card .name,
+.card p {
   font-family: "Playfair Display", serif;
-  font-optical-sizing: auto;
-  font-style: normal;
   text-align: left;
-  padding: 10PX;
+  padding: 10px;
 }
-.card .name{
-    font-family: "Playfair Display", serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-    text-align: left;
-} 
-.card p{
-    font-family: "Playfair Display", serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-    text-align: left;
-    font-size: 16px;
+
+.card .name {
+  font-size: 24px;
+  font-weight: 600;
+  margin-top: 16px;
 }
+
+.card p {
+  font-size: 16px;
+}
+
 .form-section {
-    background-color: white;
+  background-color: var(--white-color);
   width: 100%;
   padding: 30px;
-  /* border-radius: 10px; */
   margin: auto;
   text-align: left;
 }
+
 .form-section h2 {
   text-align: center;
 }
+
 .form-container {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
   justify-content: space-between;
 }
+
 .form-group {
   flex: 1;
   min-width: 300px;
 }
+
 .form-group label {
   display: block;
   font-weight: bold;
   margin-bottom: 5px;
 }
+
 .form-group input {
   width: 100%;
   padding: 10px;
   border: none;
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid var(--text-color);
   outline: none;
   font-size: 16px;
 }
+
 .form-group span {
   display: block;
   font-size: 12px;
   color: gray;
   margin-top: 5px;
 }
+
 .foot {
-    height: auto;
-    width: 100%;
-    background-color: #6c9176;
-    color: #fff;
-    padding: 40px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-wrap: wrap;
+  height: auto;
+  width: 100%;
+  background-color: #6c9176;
+  color: var(--white-color);
+  padding: 40px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
 }
 
 .foot .footer-section {
-    flex: 1;
-    margin: 10px 20px;
-    min-width: 250px;
+  flex: 1;
+  margin: 10px 20px;
+  min-width: 250px;
 }
 
 .foot .footer-section h3 {
-    color: #8FC999;
-    margin-bottom: 15px;
+  color: #8fc999;
+  margin-bottom: 15px;
 }
 
 .foot .footer-section ul {
-    list-style: none;
-    padding: 0;
+  list-style: none;
+  padding: 0;
 }
 
 .foot .footer-section ul li {
-    margin: 8px 0;
+  margin: 8px 0;
 }
 
 .foot .footer-section ul li a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 16px;
-    transition: 0.3s;
+  text-decoration: none;
+  color: var(--white-color);
+  font-size: 16px;
+  transition: 0.3s;
 }
 
 .foot .footer-section ul li a:hover {
-    color: #58cc05;
+  color: #58cc05;
 }
 
 .foot .log {
-    width: 150px;
+  width: 150px;
 }
 
 .foot .social-icons {
-    display: flex;
-    gap: 10px;
-    margin-top: 10px;
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
 }
 
 .foot .social-icons img {
-    width: 30px;
-    height: 30px;
-    filter: brightness(0) invert(1);
-    transition: 0.3s;
+  width: 30px;
+  height: 30px;
+  filter: brightness(0) invert(1);
+  transition: 0.3s;
 }
 
 .foot .social-icons img:hover {
-    filter: brightness(1);
+  filter: brightness(1);
 }
+
 @media (min-width: 768px) {
   .slider img {
     width: 150px;
@@ -258,24 +276,18 @@ body {
     height: 120px;
   }
 }
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500;600&display=swap");
-body {
-  background: color #eaeff1;
-  font-family: "Raleway", sans-serif;
-}
+
 img {
   width: 100%;
   border-radius: 12px;
   height: 214px;
   object-fit: cover;
 }
+
 #container {
   box-sizing: border-box;
   position: relative;
-  padding-top: 0%;
-  padding-bottom: 40px;
-  padding-left: 0%;
-  padding-right: 0%;
+  padding: 0 0 40px 0;
   flex-grow: 1;
   display: var(--l_display, var(--container-display));
   grid-template-rows: minmax(224.45299999999997px, auto);
@@ -285,38 +297,30 @@ img {
 }
 
 .col {
-    margin-bottom: 20px;
-    display: flex;
-    justify-content: center;
-  }
-.name {
-  font-size: 24px;
-  font-weight: 600;
-  margin-top: 16px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
 }
+
 p {
   font-size: 14px;
-  color: #7f8c9b;
+  color: var(--gray-color);
   line-height: 150%;
-  font-family: "Playfair Display", serif;
-  font-optical-sizing: auto;
-  font-style: normal;
-  text-align: left;
-  padding: 10PX;
 }
 
 .card_details {
   padding: 16px 8px 8px 8px;
 }
+
 button:focus,
 button:hover {
-  background-color: #0077ff;
-  color: #e0efff;
+  background-color: var(--highlight-color);
+  color: var(--highlight-hover-color);
 }
+
 @media screen and (max-width: 375px) {
-  /* iPhone SE की width */
   #container {
     flex-direction: column;
-    align-items: center; /* Center alignment */
+    align-items: center;
   }
 }
