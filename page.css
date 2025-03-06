@@ -11,13 +11,6 @@ body {
   background: #bf2222;
   text-align: center;
 }
-.container {
-  width: 90%;
-  max-width: 1200px;
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-}
 .header {
   background: #4caf50;
   padding: 15px;
@@ -25,8 +18,21 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: relative;
-  border-radius: 8px;
+  width: 100%;
+  /* border-radius: 8px; */
+  position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+   
+    z-index: 1; 
+    transition: top 0.3s ease-in-out; 
+}
+.menu {
+    cursor: pointer;
+}
+.header.hidden {
+    top: -100px; 
 }
 .shree {
   font-size: 20px;
@@ -46,7 +52,7 @@ body {
   top: 40px;
   background: white;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-  border-radius: 5px;
+  /* border-radius: 5px; */
   width: 150px;
 }
 .dropdown a {
@@ -66,16 +72,19 @@ body {
   justify-content: center;
   align-items: center;
   gap: 10px;
-  border-radius: 8px;
+  /* border-radius: 8px; */
 }
 /* .arrow1{
   margin-right:100px;
 
 } */
+ .slider{
+    margin-top: 65px;
+ }
 .slider img {
   width: 100px;
   height: 100px;
-  border-radius: 5px;
+  /* border-radius: 5px; */
 }
 .about-school{
     height: 80vh;
@@ -83,9 +92,16 @@ body {
     background-color: rgb(13, 158, 98);
 }
 .about {
-  background: #ffcc00;
+    background-color: #edca8e;
   padding: 15px;
-  border-radius: 10px;
+  /* border-radius: 10px; */
+}
+.card{
+    background: transparent;
+    border: none;
+}
+.card img{
+    border-radius: 0;
 }
 .about-teacher {
   display: flex;
@@ -104,13 +120,26 @@ body {
   font-optical-sizing: auto;
   font-style: normal;
   text-align: left;
+  padding: 10PX;
 }
-
+.card .name{
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    text-align: left;
+} 
+.card p{
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    text-align: left;
+    font-size: 16px;
+}
 .form-section {
-  background: white;
+    background-color: white;
+  width: 100%;
   padding: 30px;
   border-radius: 10px;
-  max-width: 800px;
   margin: auto;
   text-align: left;
 }
@@ -146,10 +175,68 @@ body {
   color: gray;
   margin-top: 5px;
 }
-.footer {
-  background: #333;
-  color: white;
-  padding: 15px;
+.foot {
+    height: auto;
+    width: 100%;
+    background-color: #6c9176;
+    color: #fff;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.foot .footer-section {
+    flex: 1;
+    margin: 10px 20px;
+    min-width: 250px;
+}
+
+.foot .footer-section h3 {
+    color: #8FC999;
+    margin-bottom: 15px;
+}
+
+.foot .footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.foot .footer-section ul li {
+    margin: 8px 0;
+}
+
+.foot .footer-section ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.foot .footer-section ul li a:hover {
+    color: #58cc05;
+}
+
+.foot .log {
+    width: 150px;
+}
+
+.foot .social-icons {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.foot .social-icons img {
+    width: 30px;
+    height: 30px;
+    filter: brightness(0) invert(1);
+    transition: 0.3s;
+}
+
+.foot .social-icons img:hover {
+    filter: brightness(1);
 }
 @media (min-width: 768px) {
   .slider img {

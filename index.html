@@ -10,12 +10,12 @@
     />
 
     <link rel="stylesheet" href="page.css" />
-
-    
   </head>
   <body>
-    <div class="container">
+
+    <!-- main navigation-- Logo + School name + Dropdown menu  -->
       <div class="header">
+        <div class="logo"><img src="" alt="image"></div>
         <div class="shree">Shree Durga Public School</div>
         <div class="menu" onclick="toggleDropdown()">
           ☰
@@ -26,6 +26,8 @@
           </div>
         </div>
       </div>
+
+      <!-- slider for school images  -->
       <div class="slider">
         <button class="arrow1"><</button>
         <img src="img/1.jpeg" alt="Image" />
@@ -36,25 +38,40 @@
 
         <button class="arrow2">></button>
       </div>
+
+      <!-- About of school + Image of school  -->
       <div class="about-school" id="About">
         <h2>About</h2>
         <div class="grid">
-            <div class="row">
-                <div class="col">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, voluptates iusto illo vel rem sit qui quae, ad reprehenderit est unde, rerum numquam quis? Architecto impedit unde facilis iste consequatur rerum error ad labore perferendis aut earum facere voluptas nihil dolor libero sint nam fugit dolore, modi rem aperiam eum?</p>
-        </div>
-        <div class="col">
-            <img src="img/1.jpeg" alt="Image">
-        </div>
-        </div>
-    </div>
-      </div>
+          <div class="row">
+            <div class="col">
 
+                <!-- Info / About of school  -->
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Aliquam, voluptates iusto illo vel rem sit qui quae, ad
+                reprehenderit est unde, rerum numquam quis? Architecto impedit
+                unde facilis iste consequatur rerum error ad labore perferendis
+                aut earum facere voluptas nihil dolor libero sint nam fugit
+                dolore, modi rem aperiam eum?
+              </p>
+            </div>
+            <div class="col">
+                <!-- Image of school  -->
+              <img src="img/1.jpeg" alt="Image" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Teacher section  -->
       <div class="about">
         <h2 class="teacher">Ours Teacher and Tuitor</h2>
         <div class="about-teacher">
           <div id="container grid">
+            <!-- First row of teacher section  -->
             <div class="row">
+
+                <!-- first teacher  -->
               <div class="col">
                 <div class="card">
                   <img src="img/1.jpeg" alt="Image" />
@@ -69,6 +86,8 @@
                   </div>
                 </div>
               </div>
+
+              <!-- second teacher  -->
               <div class="col">
                 <div class="card">
                   <img src="img/1.jpeg" alt="Image" />
@@ -83,6 +102,8 @@
                   </div>
                 </div>
               </div>
+
+              <!-- Third teacher  -->
               <div class="col">
                 <div class="card">
                   <img src="img/1.jpeg" alt="Image" />
@@ -98,9 +119,12 @@
                 </div>
               </div>
             </div>
+
+             <!-- Second row of teacher section  -->
             <div class="row">
               <div class="col">
                 <div class="card">
+                    <!-- Fourth Teacher -->
                   <img src="img/1.jpeg" alt="Image" />
                   <div class="card_details">
                     <h3 class="name">Earth Planet</h3>
@@ -113,6 +137,8 @@
                   </div>
                 </div>
               </div>
+
+              <!-- fifth teacher -->
               <div class="col">
                 <div class="card">
                   <img src="img/1.jpeg" alt="Image" />
@@ -127,6 +153,7 @@
                   </div>
                 </div>
               </div>
+              <!-- sixth teacher -->
               <div class="col">
                 <div class="card">
                   <img src="img/1.jpeg" alt="Image" />
@@ -145,38 +172,130 @@
           </div>
         </div>
       </div>
+
+      <!-- Contact or Have a query Section  -->
       <div class="form-section">
         <h2>Have Any Additional Questions?</h2>
         <div class="form-container">
-            <div class="form-group">
-                <label for="first-name">First name *</label>
-                <input type="text" id="first-name" placeholder="Enter a first name.">
-                <span>ⓘ Enter a first name.</span>
-            </div>
-            <div class="form-group">
-                <label for="last-name">Last name *</label>
-                <input type="text" id="last-name" placeholder="Enter a last name.">
-                <span>ⓘ Enter a last name.</span>
-            </div>
-            <div class="form-group">
-                <label for="email">Email *</label>
-                <input type="email" id="email" placeholder="Enter an email address like example@mysite.com.">
-                <span>ⓘ Enter an email address like example@mysite.com.</span>
-            </div>
-            <div class="form-group">
-                <label for="phone">Phone</label>
-                <input type="text" id="phone" placeholder="Enter your phone number.">
-            </div>
+          <div class="form-group">
+            <label for="first-name">First name *</label>
+            <input
+              type="text"
+              id="first-name"
+              placeholder="Enter a first name."
+            />
+            <span>ⓘ Enter a first name.</span>
+          </div>
+          <div class="form-group">
+            <label for="last-name">Last name *</label>
+            <input
+              type="text"
+              id="last-name"
+              placeholder="Enter a last name."
+            />
+            <span>ⓘ Enter a last name.</span>
+          </div>
+          <div class="form-group">
+            <label for="email">Email *</label>
+            <input
+              type="email"
+              id="email"
+              placeholder="Enter an email address like example@mysite.com."
+            />
+            <span>ⓘ Enter an email address like example@mysite.com.</span>
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone</label>
+            <input
+              type="text"
+              id="phone"
+              placeholder="Enter your phone number."
+            />
+          </div>
+          <div class="form-group">
+            <label for="Question">Question *</label>
+            <input
+              type="text"
+              id="Question"
+              placeholder="Enter your Question"
+            />
+          </div>
         </div>
-    </div>
-      <div class="footer">Footer</div>
-    </div>
+      </div>
+
+      <!-- footer section of Main page  -->
+      <div class="foot">
+        <div class="footer-section">
+          <img src="https://via.placeholder.com/150" alt="Logo" class="log" />
+          <p>Follow Us On</p>
+          <div class="social-icons">
+            <img src="https://via.placeholder.com/30" alt="Facebook" />
+            <img src="https://via.placeholder.com/30" alt="Instagram" />
+            <img src="https://via.placeholder.com/30" alt="X" />
+            <img src="https://via.placeholder.com/30" alt="LinkedIn" />
+          </div>
+        </div>
+
+        <div class="footer-section">
+          <h3>Home</h3>
+          <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms and conditions</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Shree Durga Public School</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h3>Support</h3>
+          <ul>
+            <li><a href="#">Contact Support</a></li>
+            <li><a href="#">Help Guide</a></li>
+            <li><a href="#">shree.@gamil.com</a></li>
+            <li><a href="#">+91-000000000</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- hamburger icon dropdown menu  -->
     <script>
       function toggleDropdown() {
         var dropdown = document.querySelector(".dropdown");
         dropdown.style.display =
           dropdown.style.display === "block" ? "none" : "block";
       }
+    </script>
+
+    <!-- on 20% scroll nav bar is hide  -->
+    <script>
+        let lastScrollTop = 0; 
+const header = document.querySelector('.header'); 
+
+window.addEventListener('scroll', function() {
+    
+    let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+
+    
+    let scrollHeight = document.documentElement.scrollHeight - window.innerHeight;
+    let scrollPercentage = (currentScroll / scrollHeight) * 100;
+
+   
+    if (scrollPercentage > 20) {
+        if (currentScroll > lastScrollTop) {
+           
+            header.classList.add('hidden');
+        } else {
+           
+            header.classList.remove('hidden');
+        }
+    } else {
+        
+        header.classList.remove('hidden');
+    }
+
+    lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; 
+});
+
     </script>
   </body>
 </html>
