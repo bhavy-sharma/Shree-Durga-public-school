@@ -1,88 +1,197 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>School Website Layout</title>
-    <link rel="stylesheet" href="page.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    />
+
+    <link rel="stylesheet" href="page.css" />
 
     <script>
-        function toggleDropdown() {
-            var dropdown = document.querySelector(".dropdown");
-            dropdown.style.display = (dropdown.style.display === "block") ? "none" : "block";
-        }
+      function toggleDropdown() {
+        var dropdown = document.querySelector(".dropdown");
+        dropdown.style.display =
+          dropdown.style.display === "block" ? "none" : "block";
+      }
     </script>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-        <div class="header">
-            <div class="shree">Shree Durga Public School </div>
-            <div class="menu" onclick="toggleDropdown()">☰
-                <div class="dropdown">
-                    <a href="#">Home</a>
-                    <a href="#">About</a>
-                    <a href="#">Contact</a>
-                </div>
-            </div>
+      <div class="header">
+        <div class="shree">Shree Durga Public School</div>
+        <div class="menu" onclick="toggleDropdown()">
+          ☰
+          <div class="dropdown">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+          </div>
         </div>
-        <div class="slider">
-            <button class="arrow1 "><</button>
+      </div>
+      <div class="slider">
+        <button class="arrow1"><</button>
+        <img src="img/1.jpeg" alt="Image" />
+        <img src="img/2.jpeg" alt="Image" />
+        <img src="img/3.jpeg" alt="Image" />
+        <img src="img/4.jpeg" alt="iamge" />
+        <img src="img/5.jpeg" alt="" />
+
+        <button class="arrow2">></button>
+      </div>
+      <div class="about-school" id="About">
+        <h2>About</h2>
+        <div class="grid">
+            <div class="row">
+                <div class="col">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, voluptates iusto illo vel rem sit qui quae, ad reprehenderit est unde, rerum numquam quis? Architecto impedit unde facilis iste consequatur rerum error ad labore perferendis aut earum facere voluptas nihil dolor libero sint nam fugit dolore, modi rem aperiam eum?</p>
+        </div>
+        <div class="col">
             <img src="img/1.jpeg" alt="Image">
-            <img src="img/2.jpeg" alt="Image">
-            <img src="img/3.jpeg" alt="Image">
-            <img src="img/4.jpeg" alt="iamge">
-            <img src="img/5.jpeg" alt="">
-
-            <button class="arrow2">></button>
         </div>
-        <div>
-
-        </div>
-        
-        <div class="about">
-            <h2 class="teacher">Ours Teacher and Tuitor </h2>
-            <div class="about-teacher">
-                <div id="container">
-                    <div class="card">
-                        <img src="img/1.jpeg" alt="">
-                        <div class="card_details">
-                           
-                            <div class="name">Earth Planet</div>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, ipsam laudantium optio eveniet architecto laboriosam? Maiores tempora maxime delectus dicta quidem est! Vel molestiae sint aliquid inventore alias quis nam.</p>
-                        
-                        </div>
-                    </div>  
-                </div>
-            </div>
-        </div>
-        <div class="form-section">
-            <h2>Form</h2>
-            <div class="form-container">
-                <div class="form-group">
-                    <label for="first-name">First name *</label>
-                    <input type="text" id="first-name" placeholder="Enter a first name.">
-                    <span>ⓘ Enter a first name.</span>
-                </div>
-                <div class="form-group">
-                    <label for="last-name">Last name *</label>
-                    <input type="text" id="last-name" placeholder="Enter a last name.">
-                    <span>ⓘ Enter a last name.</span>
-                </div>
-                <div class="form-group">
-                    <label for="email">Email *</label>
-                    <input type="email" id="email" placeholder="Enter an email address like example@mysite.com.">
-                    <span>ⓘ Enter an email address like example@mysite.com.</span>
-                </div>
-                <div class="form-group">
-                    <label for="phone">Phone</label>
-                    <input type="text" id="phone" placeholder="Enter your phone number.">
-                </div>
-            </div>
-        </div>
-        </div>
-        <div class="footer">
-            Footer
         </div>
     </div>
-</body>
+      </div>
+
+      <div class="about">
+        <h2 class="teacher">Ours Teacher and Tuitor</h2>
+        <div class="about-teacher">
+          <div id="container grid">
+            <div class="row">
+              <div class="col">
+                <div class="card">
+                  <img src="img/1.jpeg" alt="Image" />
+                  <div class="card_details">
+                    <h3 class="name">Earth Planet</h3>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Vitae, ipsam laudantium optio eveniet architecto
+                      laboriosam? Maiores tempora maxime delectus dicta quidem
+                      est! Vel molestiae sint aliquid inventore alias quis nam.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img src="img/1.jpeg" alt="Image" />
+                  <div class="card_details">
+                    <h3 class="name">Earth Planet</h3>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Vitae, ipsam laudantium optio eveniet architecto
+                      laboriosam? Maiores tempora maxime delectus dicta quidem
+                      est! Vel molestiae sint aliquid inventore alias quis nam.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img src="img/1.jpeg" alt="Image" />
+                  <div class="card_details">
+                    <h3 class="name">Earth Planet</h3>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Vitae, ipsam laudantium optio eveniet architecto
+                      laboriosam? Maiores tempora maxime delectus dicta quidem
+                      est! Vel molestiae sint aliquid inventore alias quis nam.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <div class="card">
+                  <img src="img/1.jpeg" alt="Image" />
+                  <div class="card_details">
+                    <h3 class="name">Earth Planet</h3>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Vitae, ipsam laudantium optio eveniet architecto
+                      laboriosam? Maiores tempora maxime delectus dicta quidem
+                      est! Vel molestiae sint aliquid inventore alias quis nam.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img src="img/1.jpeg" alt="Image" />
+                  <div class="card_details">
+                    <h3 class="name">Earth Planet</h3>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Vitae, ipsam laudantium optio eveniet architecto
+                      laboriosam? Maiores tempora maxime delectus dicta quidem
+                      est! Vel molestiae sint aliquid inventore alias quis nam.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img src="img/1.jpeg" alt="Image" />
+                  <div class="card_details">
+                    <h3 class="name">Earth Planet</h3>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Vitae, ipsam laudantium optio eveniet architecto
+                      laboriosam? Maiores tempora maxime delectus dicta quidem
+                      est! Vel molestiae sint aliquid inventore alias quis nam.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="form-section">
+        <h2>Form</h2>
+        <div class="form-container">
+          <div class="form-group">
+            <label for="first-name">First name *</label>
+            <input
+              type="text"
+              id="first-name"
+              placeholder="Enter a first name."
+            />
+            <span>ⓘ Enter a first name.</span>
+          </div>
+          <div class="form-group">
+            <label for="last-name">Last name *</label>
+            <input
+              type="text"
+              id="last-name"
+              placeholder="Enter a last name."
+            />
+            <span>ⓘ Enter a last name.</span>
+          </div>
+          <div class="form-group">
+            <label for="email">Email *</label>
+            <input
+              type="email"
+              id="email"
+              placeholder="Enter an email address like example@mysite.com."
+            />
+            <span>ⓘ Enter an email address like example@mysite.com.</span>
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone</label>
+            <input
+              type="text"
+              id="phone"
+              placeholder="Enter your phone number."
+            />
+          </div>
+        </div>
+      </div>
+      <div class="footer">Footer</div>
+    </div>
+  </body>
 </html>
