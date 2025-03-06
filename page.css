@@ -28,6 +28,10 @@ body {
     z-index: 1; 
     transition: top 0.3s ease-in-out; 
 }
+.header img{
+  width: 50px;
+  height:50px;
+}
 .menu {
     cursor: pointer;
 }
@@ -90,11 +94,17 @@ body {
     height: 80vh;
     width: 100%;
     background-color: rgb(13, 158, 98);
+    font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  text-align: left;
+  padding: 10PX;
 }
 .about {
     background-color: #edca8e;
   padding: 15px;
   /* border-radius: 10px; */
+  
 }
 .card{
     background: transparent;
@@ -139,7 +149,7 @@ body {
     background-color: white;
   width: 100%;
   padding: 30px;
-  border-radius: 10px;
+  /* border-radius: 10px; */
   margin: auto;
   text-align: left;
 }
@@ -288,6 +298,11 @@ p {
   font-size: 14px;
   color: #7f8c9b;
   line-height: 150%;
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  text-align: left;
+  padding: 10PX;
 }
 
 .card_details {
