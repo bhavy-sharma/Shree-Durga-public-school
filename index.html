@@ -11,13 +11,7 @@
 
     <link rel="stylesheet" href="page.css" />
 
-    <script>
-      function toggleDropdown() {
-        var dropdown = document.querySelector(".dropdown");
-        dropdown.style.display =
-          dropdown.style.display === "block" ? "none" : "block";
-      }
-    </script>
+    
   </head>
   <body>
     <div class="container">
@@ -152,46 +146,37 @@
         </div>
       </div>
       <div class="form-section">
-        <h2>Form</h2>
+        <h2>Have Any Additional Questions?</h2>
         <div class="form-container">
-          <div class="form-group">
-            <label for="first-name">First name *</label>
-            <input
-              type="text"
-              id="first-name"
-              placeholder="Enter a first name."
-            />
-            <span>ⓘ Enter a first name.</span>
-          </div>
-          <div class="form-group">
-            <label for="last-name">Last name *</label>
-            <input
-              type="text"
-              id="last-name"
-              placeholder="Enter a last name."
-            />
-            <span>ⓘ Enter a last name.</span>
-          </div>
-          <div class="form-group">
-            <label for="email">Email *</label>
-            <input
-              type="email"
-              id="email"
-              placeholder="Enter an email address like example@mysite.com."
-            />
-            <span>ⓘ Enter an email address like example@mysite.com.</span>
-          </div>
-          <div class="form-group">
-            <label for="phone">Phone</label>
-            <input
-              type="text"
-              id="phone"
-              placeholder="Enter your phone number."
-            />
-          </div>
+            <div class="form-group">
+                <label for="first-name">First name *</label>
+                <input type="text" id="first-name" placeholder="Enter a first name.">
+                <span>ⓘ Enter a first name.</span>
+            </div>
+            <div class="form-group">
+                <label for="last-name">Last name *</label>
+                <input type="text" id="last-name" placeholder="Enter a last name.">
+                <span>ⓘ Enter a last name.</span>
+            </div>
+            <div class="form-group">
+                <label for="email">Email *</label>
+                <input type="email" id="email" placeholder="Enter an email address like example@mysite.com.">
+                <span>ⓘ Enter an email address like example@mysite.com.</span>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone</label>
+                <input type="text" id="phone" placeholder="Enter your phone number.">
+            </div>
         </div>
-      </div>
+    </div>
       <div class="footer">Footer</div>
     </div>
+    <script>
+      function toggleDropdown() {
+        var dropdown = document.querySelector(".dropdown");
+        dropdown.style.display =
+          dropdown.style.display === "block" ? "none" : "block";
+      }
+    </script>
   </body>
 </html>
