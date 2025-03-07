@@ -27,17 +27,17 @@
       </div>
     </div>
 
-    <!-- slider for school images  -->
-    <div class="slider d-flex justify-content-center align-items-center">
-      <button class="arrow1 btn btn-primary"><</button>
-      <div class="d-flex overflow-auto">
-        <img src="img/1.jpeg" alt="Image" class="img-fluid" />
-        <img src="img/2.jpeg" alt="Image" class="img-fluid" />
-        <img src="img/3.jpeg" alt="Image" class="img-fluid" />
-        <img src="img/4.jpeg" alt="Image" class="img-fluid" />
-        <img src="img/5.jpeg" alt="Image" class="img-fluid" />
+    <!--  Slider -->
+    <div class="slider">
+      <div class="slider-track">
+        <div class="slide"><img src="img/1.jpeg" alt="Image 1" /></div>
+        <div class="slide"><img src="img/2.jpeg" alt="Image 2" /></div>
+        <div class="slide"><img src="img/3.jpeg" alt="Image 3" /></div>
+        <div class="slide"><img src="img/4.jpeg" alt="Image 4" /></div>
+        <div class="slide"><img src="img/5.jpeg" alt="Image 5" /></div>
       </div>
-      <button class="arrow2 btn btn-primary">></button>
+      <button class="arrow arrow1">&lt;</button>
+      <button class="arrow arrow2">&gt;</button>
     </div>
 
     <!-- About of school + Image of school  -->
@@ -263,7 +263,9 @@
               <li><a href="#" class="text-white">Privacy Policy</a></li>
               <li><a href="#" class="text-white">Terms and conditions</a></li>
               <li><a href="#" class="text-white">FAQ</a></li>
-              <li><a href="#" class="text-white">Shree Durga Public School</a></li>
+              <li>
+                <a href="#" class="text-white">Shree Durga Public School</a>
+              </li>
             </ul>
           </div>
 
@@ -287,6 +289,42 @@
         dropdown.style.display =
           dropdown.style.display === "block" ? "none" : "block";
       }
+    </script>
+
+    <!-- Slider images  -->
+    <script>
+      const track = document.querySelector(".slider-track");
+      const slides = document.querySelectorAll(".slide");
+      const btnPrev = document.querySelector(".arrow1");
+      const btnNext = document.querySelector(".arrow2");
+      let index = 0;
+
+      function updateSlider() {
+        track.style.transform = `translateX(-${index * 100}vw)`;
+      }
+
+      let autoScroll = setInterval(() => {
+        index = (index + 1) % slides.length;
+        updateSlider();
+      }, 2000);
+
+      const stopAutoScroll = () => clearInterval(autoScroll);
+
+      btnPrev.addEventListener("click", () => {
+        stopAutoScroll();
+        index = index > 0 ? index - 1 : slides.length - 1;
+        updateSlider();
+      });
+
+      btnNext.addEventListener("click", () => {
+        stopAutoScroll();
+        index = (index + 1) % slides.length;
+        updateSlider();
+      });
+
+      document
+        .querySelector(".slider")
+        .addEventListener("mouseenter", stopAutoScroll);
     </script>
 
     <!-- on 20% scroll nav bar is hide  -->
