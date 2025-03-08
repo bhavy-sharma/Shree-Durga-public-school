@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: #A1E3F9;
+}
+.header{
+    height: 150px;
+    background-color: #578FCA;
+    margin: 20px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+    
+}
+.head1{
+    display: inline;
+    background-color:#578FCA;
+    font-size: 70px;
+    margin-left: 30px; 
+    color:#09122C;
+}
+.div1{
+    display: flex;
+}
+.div11{
+    width: 1000px;
+    height: 500px;
+    margin: 60px;
+    margin-top: 40px;
+    margin-right: 20px;
+    background-color: #578FCA;
+    border-radius: 15px;
+    border: 1px solid black;
+   
+}
+.div12{
+    width: 900px;
+    height: 500px;
+    margin: 60px;
+    margin-top: 40px;
+    margin-left: 20px;
+    background-color: #578FCA;
+    border-radius: 15px;
+    border: 1px solid black;
+}
+.img1{
+    width: 400px;
+    height: 400px;
+    margin: 70px;
+    margin-top: 50px;
+   border: 5px solid white;
+}
+.p1{
+    background-color: #578FCA;
+    text-align: left;
+    font-size: 23px;
+    margin-top: 20px;
+    margin-left: 10px;
+    line-height: 35px;
+}
+.div2{
+    background-color:  #578FCA;
+    height: 100px;
+    margin-left: 30px;
+    margin-right: 30px;
+    border-radius: 15px;
+    border: 1px solid black;
+    text-align: center;
+    font-size: 50px;
+    padding-top: 50px;
+    font-weight: bold;
+}
+.div3{
+    background-color:  #578FCA;
+    height: 300px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 30px;
+    border-radius: 15px;
+    border: 1px solid black;
+   
+}
+.div3_h1{
+    margin: 20px;
+    font-size: 40px;
+    background-color:  #578FCA;
+}
+.div31{
+   margin-top: 10px;
+   margin-left: 30px;
+   display: inline-block;
+   line-height: 30px;
+   background-color:  #578FCA;
+}
+
+.div3-li{
+    background-color:  #578FCA;
+    text-decoration: none;
+    color: #f7f1f1;
+}
+.div3-li:hover{
+        color:  #EFB036;
+       animation: myname 1s ease 1 normal;
+}
+@keyframes myname{
+    0%{
+        color: #EFB036;
+    }
+     50%{
+           color: #EFB036; 
+            transform: translatex(20px);
+     }
+    }
+ .footer{
+    margin-top: 30px;
+    background-color: #09122C;
+    height: 100px;
+    color: white;
+    padding-left: 20px;
+    padding-top: 20px;
+    line-height: 25px;
+ }
+
+
+   
