@@ -7,5 +7,10 @@
 .blockquote{
     font-size: 50px;
     padding: 30px;
-   
+}
+.col-md-6{
+    padding: 50px;
+}
+.main-aff{
+    padding-top: 60px;
 }
