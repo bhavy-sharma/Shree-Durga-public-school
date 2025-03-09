@@ -74,9 +74,9 @@ body {
 }
 
 .logo img {
-  width: 400px;
+  width: 420px;
   height: 100px;
-  margin: 0;
+  /* margin: 0; */
 }
 .header .back{
   display: flex;
@@ -336,6 +336,9 @@ nav li ul a:hover {
 }
 .about-school p {
   color: var(--white-color);
+  font-size: 1.05em;
+  /* margin-top: 20px; */
+  font-family: "Raleway", sans-serif;
 }
 .about-school img {
   height: 90%;
@@ -352,7 +355,7 @@ nav li ul a:hover {
 }
 
 .about {
-  background-color: #edca8e;
+  /* background-color: #; */
   padding: 15px;
 }
 @media (max-width: 768px) {
@@ -369,7 +372,10 @@ nav li ul a:hover {
 .card img {
   border-radius: 0;
 }
-
+.card img:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
 .about-teacher {
   display: flex;
   justify-content: center;
@@ -388,18 +394,22 @@ nav li ul a:hover {
 .card .name,
 .card p {
   font-family: "Playfair Display", serif;
-  text-align: left;
-  padding: 10px;
+  text-align: center ;
+  /* padding: 10px; */
 }
 
 .card .name {
   font-size: 24px;
   font-weight: 600;
-  margin-top: 16px;
+  /* margin-top: 5px; */
 }
 
 .card p {
   font-size: 16px;
+}
+.card a{
+  text-decoration :none;
+  color:green;
 }
 
 .form-section {
@@ -537,3 +547,4 @@ button:hover {
     align-items: center;
   }
 }
+
