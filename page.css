@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Sigmar&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500;600&display=swap");
 
-/* CSS Variables for Colors */
+
 :root {
   --primary-color: #4caf50;
   --secondary-color: #bf2222;
@@ -50,12 +50,12 @@ body {
   height: 100%;
 }
 @media (max-width: 768px) {
-  .banner img{
-    height: 70%; 
+  .banner img {
+    height: 70%;
     margin: auto;
   }
-
 }
+
 
 .header {
   background: var(--primary-color);
@@ -73,29 +73,47 @@ body {
   transition: top 0.3s ease-in-out;
 }
 
-.header img {
-  width: 70%;
+.logo img {
+  width: 50%;
   margin: 0;
 }
+
+.contact-info {
+  display: flex;
+  align-items: center;
+}
+
+.email a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.location {
+  color: white;
+  font-size: 14px;
+}
+.navbar-toggler-icon {
+  display: none;
+}
+
+@media(max-width:720px)
+{
+.navbar-toggler-icon {
+  display: block;
+}
+}
+
 
 .header.hidden {
   top: -300px;
 }
 
-* {
-  outline: none;
-  padding: 0;
-  margin: 0;
-}
-a {
-  outline: none !important;
-}
-
-
 .header1 {
-  margin-top: 170px;
+  margin-top: 120px;
   background: #fff;
 }
+
 nav ul {
   -webkit-font-smoothing: antialiased;
   list-style: none;
@@ -103,12 +121,14 @@ nav ul {
   padding: 0;
   width: 100%;
 }
+
 nav li {
   float: left;
   margin: 0;
   padding: 0;
   position: relative;
 }
+
 nav a {
   color: #444;
   display: block;
@@ -122,14 +142,13 @@ nav a {
   -o-transition: all 0.25s ease;
   transition: all 0.25s ease;
 }
-nav .dropdown {
-  background: #a9c46c;
-}
+
 nav li:hover a {
   background: #aeea94;
   color: #fff;
   box-shadow: 7px 7px 7px gray;
 }
+
 nav li ul {
   float: left;
   left: 0;
@@ -145,28 +164,92 @@ nav li ul {
   -o-transition: all 0.25s ease;
   transition: all 0.25s ease;
 }
+
 nav li:hover ul {
   opacity: 1;
   top: 50px;
   visibility: visible;
 }
+
 nav li ul li {
   float: none;
   width: 100%;
 }
+
 nav li ul a:hover {
   background: #4c5f1f;
 }
-/* Clearfix */
-.cf:after,
-.cf:before {
-  content: "";
-  display: table;
+
+/* Hamburger Menu */
+.hamburger-menu {
+  display: none;
+  cursor: pointer;
+  flex-direction: column;
+  gap: 5px;
 }
-.cf:after {
-  clear: both;
+
+.hamburger-menu div {
+  width: 30px;
+  height: 4px;
+  background-color: var(--white-color);
+  border-radius: 5px;
+  transition: all 0.3s ease;
 }
+
+.navbar-links {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+
+.navbar-links a {
+  color: var(--white-color);
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+
 @media (max-width: 768px) {
+
+  .navbar-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: var(--primary-color);
+    position: absolute;
+    top: 60px;
+    left: 0;
+    padding: 10px 0;
+  }
+
+
+  .hamburger-menu {
+    display: flex;
+  }
+
+  
+  .navbar-links.active {
+    display: flex;
+  }
+
+ 
+  .hamburger-menu.active div:nth-child(1) {
+    transform: rotate(45deg);
+    position: relative;
+    top: 10px;
+  }
+
+  .hamburger-menu.active div:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger-menu.active div:nth-child(3) {
+    transform: rotate(-45deg);
+    position: relative;
+    top: -10px;
+  }
+}
+
+@media (max-width: 375px) {
   .header1 {
     margin-top: 100px;
   }
@@ -233,7 +316,7 @@ nav li ul a:hover {
 
 @media (max-width: 768px) {
   .slider {
-    height: 100%; 
+    height: 100%;
     margin-bottom: 0;
   }
 }
@@ -264,7 +347,7 @@ nav li ul a:hover {
   text-align: center;
 }
 @media (max-width: 768px) {
-  .about-school{
+  .about-school {
     margin: 0;
   }
   .about-school h2 {
@@ -279,7 +362,7 @@ nav li ul a:hover {
 }
 @media (max-width: 768px) {
   .about {
-   margin: 0;
+    margin: 0;
   }
 }
 
@@ -325,27 +408,31 @@ nav li ul a:hover {
 }
 
 .form-section {
-  background-color: var(--white-color);
-  width: 100%;
+ background-color: var(--white-color);
   padding: 30px;
   margin: auto;
   text-align: left;
+  border-radius: 8px; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
 }
 
 .form-section h2 {
-  text-align: left; /* Align heading to the left */
+  text-align: left; 
+  font-size: 1.5em; 
+  margin-bottom: 20px; 
 }
 
 .form-container {
   display: grid;
   gap: 20px;
   justify-content: space-between;
+  grid-template-columns: 1fr 1fr;
 }
 
 .form-group {
   flex: 1;
   min-width: 300px;
-  max-width: 480px; /* Optional max width */
+  max-width: 100%; 
 }
 
 .form-group label {
@@ -357,10 +444,11 @@ nav li ul a:hover {
 .form-group input {
   width: 100%;
   padding: 10px;
-  border: none;
-  border-bottom: 2px solid var(--text-color);
+  border: 2px solid #ccc; 
+  border-radius: 4px;
   outline: none;
   font-size: 16px;
+  transition: border 0.3s ease;
 }
 
 .form-group span {
@@ -370,10 +458,10 @@ nav li ul a:hover {
   margin-top: 5px;
 }
 
-/* Add a focus effect on inputs */
+
 .form-group input:focus {
-  border-bottom: 2px solid var(--primary-color);
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-color: var(--primary-color); 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
 }
 
 /* Styling the submit button */
@@ -386,85 +474,34 @@ nav li ul a:hover {
   cursor: pointer;
   border-radius: 5px;
   transition: background-color 0.3s ease;
+  width: 100%; 
 }
 
 .form-container button[type="submit"]:hover {
-  background-color: var(--primary-color-dark); /* Darker shade for hover effect */
+  background-color: #4c5f1f; 
 }
 
-.form-container button[type="submit"] {
-  margin-top: 20px; /* Adds spacing between fields and the submit button */
+
+@media (max-width: 768px) {
+  .form-container {
+    grid-template-columns: 1fr; 
+  }
+
+  .form-section {
+    padding: 20px;
+    margin: 20px; 
+  }
+
+  .form-container button[type="submit"] {
+    width: 100%; 
+  }
 }
 
-.foot {
-  height: auto;
-  width: 100%;
-  background-color: #6c9176;
-  color: var(--white-color);
-  padding: 40px 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  flex-wrap: wrap;
-}
-
-.foot .footer-section {
-  flex: 1;
-  margin: 10px 20px;
-  min-width: 250px;
-}
-
-.foot .footer-section h3 {
-  color: #8fc999;
-  margin-bottom: 15px;
-}
-
-.foot .footer-section ul {
-  list-style: none;
-  padding: 0;
-}
-
-.foot .footer-section ul li {
-  margin: 8px 0;
-}
-
-.foot .footer-section ul li a {
-  text-decoration: none;
-  color: var(--white-color);
-  font-size: 16px;
-  transition: 0.3s;
-}
-
-.foot .footer-section ul li a:hover {
-  color: #58cc05;
-}
-
-.foot .log {
-  width: 150px;
-}
-
-.foot .social-icons {
-  display: flex;
-  gap: 10px;
-  margin-top: 10px;
-}
-
-.foot .social-icons img {
-  width: 30px;
-  height: 30px;
-  filter: brightness(0) invert(1);
-  transition: 0.3s;
-}
-
-.foot .social-icons img:hover {
-  filter: brightness(1);
-}
-
-.about img {
-  width: 100%;
-  border-radius: 12px;
-  height: 214px;
-  object-fit: cover;
+@media (max-width: 375px) {
+  .form-section {
+    padding: 15px;
+    margin: 15px;
+  }
 }
 
 #container {
