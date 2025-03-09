@@ -333,12 +333,11 @@ nav li ul a:hover {
 }
 
 .form-section h2 {
-  text-align: center;
+  text-align: left; /* Align heading to the left */
 }
 
 .form-container {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
   gap: 20px;
   justify-content: space-between;
 }
@@ -346,6 +345,7 @@ nav li ul a:hover {
 .form-group {
   flex: 1;
   min-width: 300px;
+  max-width: 480px; /* Optional max width */
 }
 
 .form-group label {
@@ -368,6 +368,32 @@ nav li ul a:hover {
   font-size: 12px;
   color: gray;
   margin-top: 5px;
+}
+
+/* Add a focus effect on inputs */
+.form-group input:focus {
+  border-bottom: 2px solid var(--primary-color);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling the submit button */
+.form-container button[type="submit"] {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.form-container button[type="submit"]:hover {
+  background-color: var(--primary-color-dark); /* Darker shade for hover effect */
+}
+
+.form-container button[type="submit"] {
+  margin-top: 20px; /* Adds spacing between fields and the submit button */
 }
 
 .foot {
