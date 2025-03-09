@@ -1,0 +1,34 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+#admission{
+    margin: 30px;
+    padding: 20px;
+    /* line-height: 20px; */
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: rgba(18, 128, 136, 0.416);
+    font-size: medium;
+    
+}
+#heading{
+    font-weight: 600;
+    font-size: 30px;
+    margin-bottom: 20px;
+    
+}
+.info{
+    margin: 30px;
+    /* font-weight: 600;
+    font-size: 25px; */
+    height: fit-content;
+    width: fit-content;
+    font-style: normal;
+}
+.about-school{
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(195, 142, 210, 0.448);
+    justify-content: left;
+}
+

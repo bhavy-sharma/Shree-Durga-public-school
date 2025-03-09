@@ -20,9 +20,41 @@
 }
 
 body {
-  font-family: "Raleway", sans-serif;
-  background: var(--background-color);
-  text-align: center;
+  background-color: #f5f5f5;
+  color: #555;
+  font-size: 1.1em;
+  font-family: Arial, Helvetica, sans-serif;
+  outline: none;
+  padding: 0;
+  margin: 0;
+}
+.banner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  z-index: 9999;
+  backdrop-filter: blur(10px);
+  display: none;
+  padding: 20px;
+}
+.banner img {
+  border: 5px solid black;
+  box-shadow: 7px 7px 7px black;
+  height: 100%;
+}
+@media (max-width: 768px) {
+  .banner img{
+    height: 70%; 
+    margin: auto;
+  }
+
 }
 
 .header {
@@ -42,111 +74,107 @@ body {
 }
 
 .header img {
-  width: 50px;
-  height: 50px;
+  width: 70%;
+  margin: 0;
 }
 
 .header.hidden {
-  top: -100px;
+  top: -300px;
 }
 
 * {
-	outline: none;
-	padding: 0;
-	margin: 0;
+  outline: none;
+  padding: 0;
+  margin: 0;
 }
 a {
-	outline: none !important;
-}
-body {
-	background-color: #F5F5F5;
-	color: #555;
-	font-size: 1.1em;
-	font-family: Arial, Helvetica, sans-serif;
-	outline: none;
-	padding: 0;
-	margin: 0;
+  outline: none !important;
 }
 
-.header1{
-  margin-top: 80px;
-	background:#FFF;
-}
 
+.header1 {
+  margin-top: 170px;
+  background: #fff;
+}
 nav ul {
-	-webkit-font-smoothing: antialiased;
-	list-style: none;
-	margin: 0;
-	padding: 0;
-	width: 100%;
+  -webkit-font-smoothing: antialiased;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
 }
 nav li {
-	float: left;
-	margin: 0;
-	padding: 0;
-	position: relative;
+  float: left;
+  margin: 0;
+  padding: 0;
+  position: relative;
 }
 nav a {
-	color: #444;
-	display: block;
-	font: normal 13px/50px Arial, Helvetica, sans-serif;
-	padding: 0 25px;
-	text-align: center;
-	text-decoration: none;
-	-webkit-transition: all .25s ease;
-	-moz-transition: all .25s ease;
-	-ms-transition: all .25s ease;
-	-o-transition: all .25s ease;
-	transition: all .25s ease;
+  color: #444;
+  display: block;
+  font: normal 13px/50px Arial, Helvetica, sans-serif;
+  padding: 0 25px;
+  text-align: center;
+  text-decoration: none;
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  -ms-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  transition: all 0.25s ease;
 }
 nav .dropdown {
-	background:url('../images/arrow.jpg') no-repeat right center;
+  background: #a9c46c;
 }
 nav li:hover a {
-	background: #01abf8;
-	color:#FFF;
+  background: #aeea94;
+  color: #fff;
+  box-shadow: 7px 7px 7px gray;
 }
 nav li ul {
-	float: left;
-	left: 0;
-	width:150%;
-	opacity: 0;
-	position: absolute;
-	top: 35px;
-	visibility: hidden;
-	z-index: 1;
-	-webkit-transition: all .25s ease;
-	-moz-transition: all .25s ease;
-	-ms-transition: all .25s ease;
-	-o-transition: all .25s ease;
-	transition: all .25s ease;
+  float: left;
+  left: 0;
+  width: 150%;
+  opacity: 0;
+  position: absolute;
+  top: 35px;
+  visibility: hidden;
+  z-index: 1;
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  -ms-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  transition: all 0.25s ease;
 }
 nav li:hover ul {
-	opacity: 1;
-	top: 50px;
-	visibility: visible;
+  opacity: 1;
+  top: 50px;
+  visibility: visible;
 }
 nav li ul li {
-	float: none;
-	width: 100%;
+  float: none;
+  width: 100%;
 }
 nav li ul a:hover {
-	background: #bbb;
+  background: #4c5f1f;
 }
 /* Clearfix */
-.cf:after, .cf:before {
-	content: "";
-	display: table;
+.cf:after,
+.cf:before {
+  content: "";
+  display: table;
 }
 .cf:after {
-	clear: both;
+  clear: both;
 }
-.shree {
-  font-size: 20px;
-  font-family: "Sigmar", sans-serif;
+@media (max-width: 768px) {
+  .header1 {
+    margin-top: 100px;
+  }
 }
 
 .slider {
+  position: relative;
+  width: 100%;
   height: 80vh;
   overflow: hidden;
 }
@@ -157,28 +185,38 @@ nav li ul a:hover {
 }
 
 .slide {
-  min-width: 100vw;
-  height: 100vh;
+  min-width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .slide img {
   width: 100%;
+  height: 100%;
   object-fit: cover;
- 
+  transition: transform 0.3s ease;
 }
 
+/* Arrows */
 .arrow {
   position: absolute;
-  top: 60%;
+  top: 50%;
   transform: translateY(-50%);
   background-color: rgba(0, 0, 0, 0.5);
-  color: white;
+  color: var(--white-color);
   border: none;
   padding: 15px;
   font-size: 30px;
   cursor: pointer;
   z-index: 2;
   display: none;
+  transition: background-color 0.3s ease;
+}
+
+.arrow:hover {
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 .slider:hover .arrow {
@@ -193,29 +231,56 @@ nav li ul a:hover {
   right: 20px;
 }
 
+@media (max-width: 768px) {
+  .slider {
+    height: 100%; 
+    margin-bottom: 0;
+  }
+}
+
 @media (min-width: 768px) {
   .slider img {
     width: 100%;
     height: 100%;
-  }
-  .about-teacher section {
-    width: 120px;
-    height: 120px;
   }
 }
 
 .about-school {
   height: 80vh;
   width: 100%;
-  background-color: rgb(13, 158, 98);
+  background-color: var(--primary-color);
   font-family: "Playfair Display", serif;
   text-align: left;
   padding: 10px;
+}
+.about-school h2 {
+  color: var(--text-color);
+}
+.about-school p {
+  color: var(--white-color);
+}
+.about-school img {
+  height: 90%;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  .about-school{
+    margin: 0;
+  }
+  .about-school h2 {
+    text-align: center;
+    font-weight: bold;
+  }
 }
 
 .about {
   background-color: #edca8e;
   padding: 15px;
+}
+@media (max-width: 768px) {
+  .about {
+   margin: 0;
+  }
 }
 
 .card {
@@ -268,12 +333,11 @@ nav li ul a:hover {
 }
 
 .form-section h2 {
-  text-align: center;
+  text-align: left; /* Align heading to the left */
 }
 
 .form-container {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
   gap: 20px;
   justify-content: space-between;
 }
@@ -281,6 +345,7 @@ nav li ul a:hover {
 .form-group {
   flex: 1;
   min-width: 300px;
+  max-width: 480px; /* Optional max width */
 }
 
 .form-group label {
@@ -303,6 +368,32 @@ nav li ul a:hover {
   font-size: 12px;
   color: gray;
   margin-top: 5px;
+}
+
+/* Add a focus effect on inputs */
+.form-group input:focus {
+  border-bottom: 2px solid var(--primary-color);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling the submit button */
+.form-container button[type="submit"] {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.form-container button[type="submit"]:hover {
+  background-color: var(--primary-color-dark); /* Darker shade for hover effect */
+}
+
+.form-container button[type="submit"] {
+  margin-top: 20px; /* Adds spacing between fields and the submit button */
 }
 
 .foot {
@@ -369,8 +460,7 @@ nav li ul a:hover {
   filter: brightness(1);
 }
 
-
-img {
+.about img {
   width: 100%;
   border-radius: 12px;
   height: 214px;

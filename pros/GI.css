@@ -3,12 +3,36 @@
     padding: 0;
 }
 .info{
-    padding: 20px 50px;
+    height: fit-content;
+    width: fit-content;
+    /* padding-left:20px ; */
+    /* padding-bottom: 10px; */
+     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+    font-style: normal;
 }
+  .rule{
+    padding-left: 10px;
+  }
+  /* .para{
+    padding-left: 10px;
+  }   */
 .general{
     margin:30px ;
+    padding: 10px;
+    font-weight: 400; 
+    font-size: medium;
+    background-color: rgba(78, 48, 112, 0.642);
+    text-align: left; 
 }
-.about-school{
+.about-school{ 
+    margin: 15px;
+    padding: 15px;
     height: 100vh;
     width: 100%;
+    background-color: rgba(195, 142, 210, 0.448);
+    justify-content: left;
+    font-style: normal;
+    font-size: medium;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-top: 1px solid black;
 }

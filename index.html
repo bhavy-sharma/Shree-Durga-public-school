@@ -13,59 +13,94 @@
     <link rel="stylesheet" href="page.css" />
   </head>
   <body>
+    <div id="banner" class="banner">
+      <img
+        src="Material/WhatsApp Image 2025-03-08 at 02.15.42_e29829dc.jpg"
+        alt="Banner"
+      />
+    </div>
     <!-- main navigation-- Logo + School name + Dropdown menu  -->
     <div class="header d-flex justify-content-between align-items-center p-3">
-      <div class="logo">
-        <img src="img/school.png" alt="image" class="img-fluid" />
+      <div class="logo d-flex">
+        <img src="Material/banner.png" alt="Banner" class="img-fluid" />
+        <div class="header-info"></div>
+        <div class="header-info"></div>
+        <div class="header-info"></div>
       </div>
-      <div class="shree">Shree Durga Public School</div>
-      <button
-      class="navbar-toggler"
-      type="button"
-      data-bs-toggle="collapse"
-      data-bs-target="#navbarNav"
-    >
-      <span class="navbar-toggler-icon"></span>
-    </button>
 
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
     </div>
 
     <!-- Navbar Start -->
-    <div class="header1">  
+    <div class="header1">
       <nav>
-          <ul class="cf">
-              <li><a href="#">Home</a></li>
-              <li><a class="dropdown" href="#">About us</a>
-                  <ul>
-                      <li><a href="#"></a></li>
-                      <li><a href="#"></a></li>
-                      <li><a href="#"></a></li>
-                  </ul>
-                  </li>
-              <li><a class="dropdown" href="#">Prospectus</a>
-                <ul>
-                      <li><a href="#"></a></li>
-                      <li><a href="#"></a></li>
-                      <li><a href="#"></a></li>
-                  </ul>
-              
-              </li>
-              <li><a href="#">Menu Item 4</a></li>
-          </ul>
-      </nav>
-  </div>
+        <ul class="cf">
+          <li><a class="dropdown" href="#">Home</a></li>
 
-    <!--  Slider -->
-    <div class="slider">
-      <div class="slider-track">
-        <div class="slide"><img src="img/1.jpeg" alt="Image 1" /></div>
-        <div class="slide"><img src="img/2.jpeg" alt="Image 2" /></div>
-        <div class="slide"><img src="img/3.jpeg" alt="Image 3" /></div>
-        <div class="slide"><img src="img/4.jpeg" alt="Image 4" /></div>
-        <div class="slide"><img src="img/5.jpeg" alt="Image 5" /></div>
+          <li>
+            <a class="dropdown" href="#">About us &#9660;</a>
+            <ul>
+              <li><a href="about/about.html">School History</a></li>
+              <li><a href="#">Our Team</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </li>
+
+          <li>
+            <a class="dropdown" href="#">Gallery &#9660;</a>
+            <ul>
+              <li><a href="#">Photo Gallery</a></li>
+              <li><a href="#">Media Gallery</a></li>
+              <li><a href="#">Video Gallery</a></li>
+            </ul>
+          </li>
+
+          <li>
+            <a class="dropdown" href="#">Prospectus &#9660;</a>
+            <ul>
+              <li><a href="#">General Information</a></li>
+              <li><a href="#">Admission & Withdrawal</a></li>
+              <li><a href="#">Admission Form</a></li>
+              <li><a href="#">Fee Structure</a></li>
+            </ul>
+          </li>
+
+          <li>
+            <a class="dropdown" href="#">Achievements &#9660;</a>
+            <ul>
+              <li><a href="#">Sports Achievements</a></li>
+              <li><a href="#">Academic Achievers</a></li>
+              <li><a href="#">Toppers</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <!-- Navbar End -->
+
+    <!-- Slider -->
+    <div class="container-fluid p-0">
+      <div class="slider">
+        <div class="slider-track d-flex">
+          <div class="slide">
+            <img src="Material/IMG-20250309-WA0026.jpg" alt="Image 1" class="w-100" />
+          </div>
+          <div class="slide">
+            <img src="Material/IMG-20250309-WA0031.jpg" alt="Image 2" class="w-100" />
+          </div>
+          <div class="slide">
+            <img src="Material/IMG-20250309-WA0032.jpg" alt="Image 3" class="w-100" />
+          </div>
+        <button class="arrow arrow1">&lt;</button>
+        <button class="arrow arrow2">&gt;</button>
       </div>
-      <button class="arrow arrow1">&lt;</button>
-      <button class="arrow arrow2">&gt;</button>
     </div>
 
     <!-- About of school + Image of school  -->
@@ -85,7 +120,11 @@
         </div>
         <div class="col-md-6">
           <!-- Image of school  -->
-          <img src="img/1.jpeg" alt="Image" class="img-fluid" />
+          <img
+            src="Material/IMG-20250309-WA0032.jpg"
+            alt="Image"
+            class="img-fluid"
+          />
         </div>
       </div>
     </div>
@@ -195,120 +234,119 @@
       </div>
     </div>
 
-    <!-- Contact or Have a query Section  -->
+    <!-- Contact or Have a query Section -->
     <div class="form-section container my-5">
-      <h2>Have Any Additional Questions?</h2>
-      <div class="form-container">
+      <div class="grid">
         <div class="row">
-          <div class="col-md-6">
-            <div class="form-group">
-              <label for="first-name">First name *</label>
-              <input
-                type="text"
-                id="first-name"
-                class="form-control"
-                placeholder="Enter a first name."
-              />
-              <span>ⓘ Enter a first name.</span>
+          <div class="col">
+            <h2>Have Any Additional Questions?</h2>
+            <div class="form-container">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <label for="first-name">First name *</label>
+                    <input
+                      type="text"
+                      id="first-name"
+                      class="form-control"
+                      placeholder="Enter a first name."
+                    />
+                    <span>ⓘ Enter a first name.</span>
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <label for="last-name">Last name *</label>
+                    <input
+                      type="text"
+                      id="last-name"
+                      class="form-control"
+                      placeholder="Enter a last name."
+                    />
+                    <span>ⓘ Enter a last name.</span>
+                  </div>
+                </div>
+              </div>
+              <div class="row mt-3">
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <label for="email">Email *</label>
+                    <input
+                      type="email"
+                      id="email"
+                      class="form-control"
+                      placeholder="Enter an email address like example@mysite.com."
+                    />
+                    <span
+                      >ⓘ Enter an email address like example@mysite.com.</span
+                    >
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <label for="phone">Phone</label>
+                    <input
+                      type="text"
+                      id="phone"
+                      class="form-control"
+                      placeholder="Enter your phone number."
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="row mt-3">
+                <div class="col-12">
+                  <div class="form-group">
+                    <label for="Question">Question *</label>
+                    <input
+                      type="text"
+                      id="Question"
+                      class="form-control"
+                      placeholder="Enter your Question"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <!-- Submit Button -->
+              <div class="row mt-3">
+                <div class="col-12">
+                  <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="col-md-6">
-            <div class="form-group">
-              <label for="last-name">Last name *</label>
-              <input
-                type="text"
-                id="last-name"
-                class="form-control"
-                placeholder="Enter a last name."
-              />
-              <span>ⓘ Enter a last name.</span>
-            </div>
-          </div>
-        </div>
-        <div class="row mt-3">
-          <div class="col-md-6">
-            <div class="form-group">
-              <label for="email">Email *</label>
-              <input
-                type="email"
-                id="email"
-                class="form-control"
-                placeholder="Enter an email address like example@mysite.com."
-              />
-              <span>ⓘ Enter an email address like example@mysite.com.</span>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="form-group">
-              <label for="phone">Phone</label>
-              <input
-                type="text"
-                id="phone"
-                class="form-control"
-                placeholder="Enter your phone number."
-              />
-            </div>
-          </div>
-        </div>
-        <div class="row mt-3">
-          <div class="col-12">
-            <div class="form-group">
-              <label for="Question">Question *</label>
-              <input
-                type="text"
-                id="Question"
-                class="form-control"
-                placeholder="Enter your Question"
-              />
-            </div>
+          <div class="col">
+            <img src="" alt="Image">
           </div>
         </div>
       </div>
     </div>
 
     <!-- footer section of Main page  -->
-    <div class="foot bg-dark text-white py-5">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4 footer-section">
-            <img
-              src="https://via.placeholder.com/150"
-              alt="Logo"
-              class="log img-fluid"
-            />
-            <p>Follow Us On</p>
-            <div class="social-icons d-flex">
-              <img src="https://via.placeholder.com/30" alt="Facebook" />
-              <img src="https://via.placeholder.com/30" alt="Instagram" />
-              <img src="https://via.placeholder.com/30" alt="X" />
-              <img src="https://via.placeholder.com/30" alt="LinkedIn" />
-            </div>
-          </div>
+    <footer class="bg-dark text-white text-center py-3">
+      Copyright © 2025. All rights reserved to Shri Durga Public School, Village
+      Daulatpur Khurd, District Bulandshah <br />
+      Website Designed By: Desk Warrior's..
+    </footer>
 
-          <div class="col-md-4 footer-section">
-            <h3>Home</h3>
-            <ul class="list-unstyled">
-              <li><a href="#" class="text-white">Privacy Policy</a></li>
-              <li><a href="#" class="text-white">Terms and conditions</a></li>
-              <li><a href="#" class="text-white">FAQ</a></li>
-              <li>
-                <a href="#" class="text-white">Shree Durga Public School</a>
-              </li>
-            </ul>
-          </div>
+    <!-- Banner  -->
+    <script>
+      window.onload = function () {
+        let banner = document.getElementById("banner");
+        let body = document.body;
 
-          <div class="col-md-4 footer-section">
-            <h3>Support</h3>
-            <ul class="list-unstyled">
-              <li><a href="#" class="text-white">Contact Support</a></li>
-              <li><a href="#" class="text-white">Help Guide</a></li>
-              <li><a href="#" class="text-white">shree.@gamil.com</a></li>
-              <li><a href="#" class="text-white">+91-8307233996</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
+        // Show the banner
+        banner.style.display = "flex";
+        body.classList.add("blur");
+
+        // Hide the banner when clicked
+        banner.addEventListener("click", function () {
+          banner.style.display = "none";
+          body.classList.remove("blur");
+        });
+      };
+    </script>
 
     <!-- hamburger icon dropdown menu  -->
     <script>
@@ -328,14 +366,16 @@
       let index = 0;
 
       function updateSlider() {
-        track.style.transform = `translateX(-${index * 100}vw)`;
+        track.style.transform = `translateX(-${index * 100}%)`;
       }
 
+      // Automatic Scroll every 2 seconds
       let autoScroll = setInterval(() => {
         index = (index + 1) % slides.length;
         updateSlider();
       }, 2000);
 
+      // Stop auto scroll on mouseenter
       const stopAutoScroll = () => clearInterval(autoScroll);
 
       btnPrev.addEventListener("click", () => {
@@ -353,6 +393,13 @@
       document
         .querySelector(".slider")
         .addEventListener("mouseenter", stopAutoScroll);
+
+      document.querySelector(".slider").addEventListener("mouseleave", () => {
+        autoScroll = setInterval(() => {
+          index = (index + 1) % slides.length;
+          updateSlider();
+        }, 2000);
+      });
     </script>
 
     <!-- on 20% scroll nav bar is hide  -->
