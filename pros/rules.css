@@ -1,0 +1,14 @@
+*{
+    margin: 0PX;
+    padding: 0px;
+}
+#entry header{
+    font-weight: 600;
+    font-size: 500;
+}
+.block-heading,h4{
+    font-weight: 600;
+    font-size: 550;
+    margin: 20px;
+    padding: 10px;
+}
