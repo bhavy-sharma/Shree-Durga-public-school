@@ -7,7 +7,7 @@
     width: fit-content;
     /* padding-left:20px ; */
     /* padding-bottom: 10px; */
-     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
     font-style: normal;
 }
   .rule{
@@ -21,13 +21,8 @@
     padding: 10px;
     font-weight: 400; 
     font-size: medium;
-    background-color: rgba(78, 48, 112, 0.642);
+    background-color: rgba(52, 32, 75, 0.642);
     text-align: left; 
-}
-.about-school{ 
-    margin: 15px;
-    padding: 15px;
-    height: 100vh;
     width: 100%;
     background-color: rgba(195, 142, 210, 0.448);
     justify-content: left;
@@ -35,4 +30,15 @@
     font-size: medium;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     border-top: 1px solid black;
+}
+.about-school{
+  margin:13px;
+  padding: 15px;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(99, 125, 136);
+  justify-content: left;
+  font-style: normal;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  border-top: 1px solid black;
 }
