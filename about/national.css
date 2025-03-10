@@ -7,12 +7,13 @@
 .p1{
     padding-left: 40px;
     padding-top: 40px;
-    font-size: 60px;
+    font-size: 50px;
+    font-weight: bold;
 }
 .p2{
     padding-left: 40px;
     padding-top: 40px;
-   font-size: 25px;
+   font-size: 20px;
 }
 .main-aff{
     padding-top: 60px;

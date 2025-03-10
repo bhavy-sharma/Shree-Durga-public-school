@@ -1,5 +1,9 @@
 .col-md-8{
     padding: 40px;
+   font-size: 20px;
+}
+.founder-name{
+    text-align: center;
 }
 .img-fluid{
     border: 3px solid black;
@@ -13,6 +17,7 @@
 .blockquote{
     font-size: 50px;
     padding: 30px;
+    font-weight: bold;
 }
 .col-md-6{
     padding: 50px;
