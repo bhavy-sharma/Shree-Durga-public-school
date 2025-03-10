@@ -1,0 +1,40 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #c9a7de;
+}
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+}
+.rules-heading{
+    text-align: center;
+    color: #ed9c59;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+li{
+    background: #eef;
+    margin: 10px 0;
+    padding: 10px;
+    border-left: 5px solid;
+
+    text-align: left;
+    padding: 10px;
+    background: #007BFF;
+    color: white;
+    margin-top: 20px;
+    border-radius: 0 0 8px;
+}
+.bus image{
+    height: 100px;
+    width: 1;
+}
