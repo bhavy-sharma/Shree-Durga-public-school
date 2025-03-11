@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Footer</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #121b23;
+            color: white;
+        }
+        .footer {
+            background-color:#004D40;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: start;
+            flex-wrap: wrap;
+        }
+        .footer-column {
+            flex: 1;
+            margin: 10px;
+            min-width: 250px;
+        }
+        .footer-column h3 {
+            color: #00ffcc;
+        }
+        .footer-column a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            margin: 5px 0;
+        }
+        .footer-column a:hover {
+            text-decoration: underline;
+        }
+        .contact-info {
+            background-color: #16232e;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .contact-info p {
+            margin: 5px 0;
+        }
+        .footer-bottom {
+            text-align: center;
+            padding: 10px;
+            background-color: #0d141a;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <footer class="footer">
+        <div class="footer-column">
+            <h3>Useful Links</h3>
+            <a href="#">Home</a>
+            <a href="#">About Us</a>
+            <a href="#">Meet Our Team</a>
+            <a href="#">FAQ</a>
+            <a href="#">Contact Us</a>
+        </div>
+        <div class="footer-column">
+            <h3>Contact Us</h3>
+            <div class="contact-info">
+                <p>📧 Mail us: <br> vedaverse.work@gmail.com <br> work.bhavy@gmail.com</p>
+                <p>📞 Bhavy Sharma: +91 8307233996</p>
+                <p>📞 Chetan Thakur: +91 9536206851</p>
+            </div>
+        </div>
+    </footer>
+    
+    <div class="footer-bottom">
+        © 2024 Veda Verse. All rights reserved.
+    </div>
+
+</body>
+</html>

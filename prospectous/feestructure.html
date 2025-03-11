@@ -1,0 +1,199 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fee Structure - Shree Durga Public School</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-image: url('images/fee-bg.jpg');
+            background-size: cover;
+            background-position: center;
+            min-height: 100vh;
+        }
+
+        .fee-container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 2rem;
+        }
+
+        .section-title {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 3rem;
+            font-size: 2.5rem;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 4px;
+            background: #3498db;
+            border-radius: 2px;
+        }
+
+        .fee-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .fee-card {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 10px;
+            padding: 2rem;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .fee-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .fee-card h3 {
+            color: #2c3e50;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #3498db;
+        }
+
+        .fee-list {
+            list-style: none;
+        }
+
+        .fee-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 1rem;
+            padding: 0.5rem 0;
+            border-bottom: 1px dashed #ccc;
+        }
+
+        .fee-note {
+            background: #f8f9fa;
+            padding: 1.5rem;
+            margin-top: 2rem;
+            border-radius: 8px;
+            border-left: 4px solid #3498db;
+        }
+
+        .fee-note h4 {
+            color: #2c3e50;
+            margin-bottom: 1rem;
+        }
+
+        .fee-note ul {
+            padding-left: 1.5rem;
+        }
+
+        .fee-note li {
+            margin-bottom: 0.5rem;
+            color: #666;
+        }
+
+        @media (max-width: 768px) {
+            .fee-container {
+                padding: 1rem;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="fee-container">
+        <h1 class="section-title">Fee Structure 2025-26</h1>
+        
+        <div class="fee-grid">
+            <div class="fee-card">
+                <h3>Pre-Primary Section (Nursery - UKG) Addmission Fee</h3>
+                <ul class="fee-list">
+                    <li class="fee-item">
+                        <span>Nurcery</span>
+                        <span>₹ 300</span>
+                    </li>
+                    <li class="fee-item">
+                        <span>LKG </span>
+                        <span>₹ 310 </span>
+                    </li>
+                    <li class="fee-item">
+                        <span>UKg </span>
+                        <span>₹ 320</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="fee-card">
+                <h3>Primary Section (Class 1-5) Admission Fee</h3>
+                <ul class="fee-list">
+                    <li class="fee-item">
+                        <span>1<sup>th</sup>Standard</span>
+                        <span>₹ 330</span>
+                    </li>
+                    <li class="fee-item">
+                        <span>2<sup>nd</sup>Standard</span>
+                        <span>₹ 340</span>
+                    </li>
+                    <li class="fee-item">
+                        <span>3<sup>th</sup>Standard</span>
+                        <span>₹ 350</span>
+                    </li>
+                    <li class="fee-item">
+                        <span>4<sup>th</sup>Standard</span>
+                        <span>₹ 360</span>
+                    </li>
+                    <li class="fee-item">
+                        <span>5<sup>th</sup>Standard</span>
+                        <span>₹ 370</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="fee-card">
+                <h3>Middle Section (Class 6-8) Admission Fee</h3>
+                <ul class="fee-list">
+                    <li class="fee-item">
+                        <span>6 <sup>th</sup>Standard</span>
+                        <span>₹ 380</span>
+                    </li>
+                    <li class="fee-item">
+                        <span>7 <sup>th</sup>Standard  </span>
+                        <span>₹ 390</span>
+                    </li>
+                    <li class="fee-item">
+                        <span>8<sup>th</sup>Standard</span>
+                        <span>₹ 400</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="fee-note">
+            <h4>Important :-</h4>
+            <ul>
+                <li>Fees should be paid quarterly (every three months)</li>
+                <li>Late fee payment will incur additional charges</li>
+                <li>Annual charges include books, uniform, and activity materials</li>
+                <li>Transport fees are additional and vary by distance</li>
+                <li>Sibling discount available on tuition fees</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

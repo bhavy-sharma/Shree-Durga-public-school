@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academic Excellence</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            position: relative;
+        }
+
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.75);
+            backdrop-filter: blur(2px);
+            -webkit-backdrop-filter: blur(2px);
+            z-index: 0;
+        }
+
+        .academic-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        .section-title {
+            color: #2c3e50;
+            text-align: center;
+            margin-bottom: 3rem;
+            font-size: 2.5rem;
+            position: relative;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 4px;
+            background: #3498db;
+            border-radius: 2px;
+            transition: width 0.3s ease;
+        }
+
+        .section-title:hover::after {
+            width: 150px;
+        }
+
+        .academic-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .academic-card {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            max-height: 300px;
+            overflow: hidden;
+            position: relative;
+            transition: max-height 0.3s ease-out;
+        }
+
+        .academic-card.expanded {
+            max-height: 1000px; /* Set this to a value larger than your content */
+        }
+
+        .show-more-btn {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            padding: 1rem;
+            background: linear-gradient(transparent, rgba(255, 255, 255, 0.9) 40%);
+            border: none;
+            color: #3498db;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+
+        .show-more-btn:hover {
+            color: #2980b9;
+        }
+
+        .academic-card.expanded .show-more-btn {
+            background: transparent;
+            position: relative;
+            margin-top: 1rem;
+        }
+
+        .academic-card:hover {
+            transform: translateY(-10px) scale(1.02);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+            background: rgba(255, 255, 255, 0.95);
+        }
+
+        .academic-card h3 {
+            color: #2c3e50;
+            margin-bottom: 1rem;
+            font-size: 1rem;
+            position: relative;
+            padding-bottom: 0.5rem;
+            transition: color 0.3s ease;
+        }
+
+        .academic-card:hover h3 {
+            color: #3498db;
+        }
+
+        .academic-card h3::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 50px;
+            height: 3px;
+            background: #3498db;
+            transition: width 0.3s ease;
+        }
+
+        .academic-card:hover h3::after {
+            width: 75px;
+        }
+
+        .academic-card p {
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+
+        .academic-card ul {
+            list-style-position: inside;
+            color: #666;
+            padding-left: 1rem;
+        }
+
+        .academic-card li {
+            margin-bottom: 0.5rem;
+            transition: transform 0.2s ease;
+        }
+
+        .academic-card li:hover {
+            transform: translateX(5px);
+            color: #3498db;
+        }
+
+        @media (max-width: 768px) {
+            .academic-container {
+                padding: 1rem;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+
+            .academic-card {
+                padding: 1.5rem;
+            }
+        }
+
+        .bg-slideshow {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+
+        .bg-slideshow img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0;
+            transition: opacity 2s ease-in-out;
+        }
+
+        .bg-slideshow img.active {
+            opacity: 1;
+        }
+        .footer {
+            background-color: #0f171e;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: start;
+            flex-wrap: wrap;
+            position: relative;
+            z-index: 2;  /* Ensure footer stays above the background overlay */
+            margin-top: 2rem;  /* Add some space between content and footer */
+            width: 100%;
+        }
+        .footer-column {
+            flex: 1;
+            margin: 10px;
+            min-width: 250px;
+            color: white;  /* Make text visible */
+        }
+        .footer-column h3 {
+            color: #00ffcc;
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+        }
+        .footer-column a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            margin: 8px 0;
+            transition: color 0.3s ease;
+        }
+        .footer-column a:hover {
+            color: #00ffcc;
+            text-decoration: none;
+        }
+        .contact-info {
+            background-color: #16232e;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .contact-info p {
+            margin: 5px 0;
+        }
+        .contact-info2 {
+            background-color: #16232e;
+            padding: 15px;
+            border-radius: 5px;
+            color: white;
+        }
+        .contact-info2 p {
+            margin: 8px 0;
+            line-height: 1.4;
+        }
+        .footer-bottom {
+            text-align: center;
+            padding: 10px;
+            background-color: #0d141a;
+            font-size: 14px;
+        }
+        @media (max-width: 768px) {
+            .footer {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .footer-column {
+                margin: 15px 0;
+            }
+        }
+        .footer-bottom1 {
+            text-align: center;
+            /* padding: 10px; */
+            background-color: #0d141a;
+            font-size: 14px;
+            z-index: 2;
+        }
+    </style>
+</head>
+<body>
+    <div class="bg-slideshow">
+        <img src="images/1.png"class="active" alt="">
+        <img src="images/2.png" alt="">
+        <img src="images/3.png" alt="">
+        <img src="images/4.png" alt="">
+    </div>
+    
+    <div class="academic-container">
+        <h1 class="section-title">Academic Excellence</h1>
+        <!-- card details  -->
+        <div class="academic-grid">
+            <div class="academic-card">
+                <div class="card-content">
+                    <h3>Pre-Primary Section (Nursery to UKG)</h3>
+                    <p>The early childhood curriculum is based on experiential learning, focusing on sensory development, language acquisition, and moral skills enhancement. The key components include:</p>
+                    <ul>
+                        <li><strong>Language Development:</strong><br> Introduction to phonics, storytelling, and basic vocabulary.</li>
+                        <li><strong>Numeracy Skills:</strong><br> Learning numbers, counting, and basic arithmetic concepts through play-based methods.</li>
+                        <li><strong>Cognitive & Moral Skills</strong><br> Activities such as puzzles, drawing, and hands-on learning.</li>
+                    </ul>
+                </div>
+                <button class="show-more-btn">Show More</button>
+            </div>
+
+            <div class="academic-card">
+                <div class="card-content">
+                    <h3>Primary Section (Class 1 to 5)</h3>
+                    <p>We foundational years emphasize a balance between academics and extracurricular activities, ensuring a solid learning base.</p>
+                    <ul>
+                        <li><strong>Languages:</strong><br> English and Hindi with structured grammar, reading comprehension, and writing skills.</li>
+                        <li><strong>Mathematics:</strong><br> Development of analytical and problem-solving skills through engaging methods.</li>
+                        <li><strong>Environmental Studies (EVS):</strong><br> Awareness about nature, surroundings, and basic science concepts.</li>
+                        <li><strong>Computer Science:</strong><br> Introduction to basic programming, digital literacy, and internet safety.</li>
+                        <li><strong>Co-curricular Activities:</strong><br> Art, music, dance, and drama to enhance self-expression and confidence.</li>
+                    </ul>
+                </div>
+                <button class="show-more-btn">Show More</button>
+            </div>
+
+            <div class="academic-card">
+                <div class="card-content">
+                    <h3>Middle Section (Class 6 to 8)</h3>
+                    <p>Our evaluation system ensures continuous growth:</p>
+                    <ul>
+                        <li><strong>Science: </strong><br>Introduction to Physics, Chemistry, and Biology with practical applications.</li>
+                    </ul>
+                    <ul>
+                        <li><strong>Social Science:</strong><br>History Civics, Geography, and Economics to develop awareness of society and global issues.</li>
+                    </ul>
+            
+                </div>
+                <button class="show-more-btn">Show More</button>
+            </div>
+
+            </div>
+       
+    </div>
+    
+    <footer class="footer">
+        <div class="footer-column">
+            <h3>Useful Links</h3>
+            <a href="#overview">Home</a>
+            <a href="#facilities">About</a>
+            <a href="#facilities">Achievement</a>
+            <a href="#contact">Contact Us</a>
+        </div>
+        <div class="footer-column">
+            <h3>Contact Us</h3>
+            <div class="contact-info2">
+                <p>📍 Shree Durga Public School, Village Daulatpur Khurd, Tehsil Dibai, District Bulandshahr 203001</p>
+                <p>📧 Email: knikupadhyaya@gmail.com</p>
+                <p>📞 Phone: 9811838668 | 9510730154</p>
+            </div>
+        </div>
+        
+
+    </footer>
+    <div class="footer-bottom1">
+        © 2025 Shree Durga Public School. All rights reserved.<br>
+        Designed By :- Desk Warriors.. Team
+    </div>
+
+    
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Background slideshow functionality
+            const images = document.querySelectorAll('.bg-slideshow img');
+            let currentImageIndex = 0;
+
+            function changeBackground() {
+                images.forEach(img => img.classList.remove('active'));
+                currentImageIndex = (currentImageIndex + 1) % images.length;
+                images[currentImageIndex].classList.add('active');
+            }
+
+            setInterval(changeBackground, 5000);
+
+            // Show More functionality
+            const cards = document.querySelectorAll('.academic-card');
+            
+            cards.forEach(card => {
+                const btn = card.querySelector('.show-more-btn');
+                const content = card.querySelector('.card-content');
+
+                // Check if content needs a show more button
+                if (content.scrollHeight <= 300) {
+                    btn.style.display = 'none';
+                } else {
+                    btn.addEventListener('click', () => {
+                        card.classList.toggle('expanded');
+                        btn.textContent = card.classList.contains('expanded') ? 'Show Less' : 'Show More';
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
