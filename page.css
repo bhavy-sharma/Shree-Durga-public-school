@@ -549,69 +549,69 @@ button:hover {
 }
 
 
-/* Footer  */
-.footer{
- padding: 20px;
-}
-.footer .navigation-link a{
-  color: var(--gray-color);
-}
-footer .nav-link:hover,.footer .links a svg:hover{
-  color: var(--primary-color);
-  font-size: 20px;
-}
-.footer h3{
-  color: #255F38;
-}
-.foot p{
-  margin-top: 13px;
-  margin-bottom: 0;
-}
-.footer p{
-  margin: 0;
-}
-.footer .links a svg{
-  display: block;
-  font-size: 40px;
-  margin: 10px;
-  color: var(--gray-color);
-} 
-.icon-large{
+
+footer {
+  background-color: #1c1f22; /* Dark background */
+  color: white;
+  padding: 30px 20px;
   font-size: 16px;
 }
-.icon-large svg{
-  width: 32px;
-  height: 32px;
-}
-.links{
+
+.footer {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  text-align: left;
+  padding-bottom: 20px;
 }
-.inline{
-  display: inline;
+
+.part h3 {
+  color: #4caf50; /* Green heading text */
+  margin-bottom: 15px;
 }
-@media(max-width:720px){
-  .footer{
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-  }
-  .part{
-    margin: 10px;
-    text-align: center;
-  }
-  .footer .links a svg{
-    display: inline;
-    font-size: 40px;
-    margin: 10px;
-    color: var(--gray-color);
-  } 
-  .links{
-   flex-wrap: wrap;
-   margin-top: 10px;
-  }
-  .foot p{
-    margin: 0;
-  }
+
+.part a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 8px;
+  transition: color 0.3s ease-in-out;
+}
+
+.part a:hover {
+  color: #4caf50; /* Change color on hover */
+}
+
+.contact-us p {
+  margin: 5px 0;
+}
+
+.social-links .links a {
+  margin-right: 15px;
+  display: inline-block;
+}
+
+.social-links .links svg {
+  fill: white;
+  width: 28px;
+  height: 28px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.social-links .links a:hover svg {
+  transform: scale(1.1);
+  fill: #4caf50; /* Green on hover */
+}
+
+.foot {
+  text-align: center;
+  font-size: 14px;
+  border-top: 1px solid #444;
+  padding-top: 15px;
+}
+
+.foot a {
+  color: #4caf50;
+  text-decoration: none;
+  font-weight: bold;
 }

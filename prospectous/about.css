@@ -200,46 +200,6 @@ h2 {
     margin-bottom: 0.5rem;
 }
 
-/* Footer styles */
-footer {
-    background-color: #004d40;
-    color: white;
-    text-align: center;
-    padding: 1rem;
-    margin-top: 2rem;
-}
-
-/* Footer Styles */
-.footer {
-    background-color: #004d40;
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: start;
-    flex-wrap: wrap;
-    color: white;
-}
-
-.footer-column {
-    flex: 1;
-    margin: 10px;
-    min-width: 250px;
-}
-
-.footer-column h3 {
-    color: #00ffcc;
-}
-
-.footer-column a {
-    display: block;
-    color: white;
-    text-decoration: none;
-    margin: 5px 0;
-}
-
-.footer-column a:hover {
-    text-decoration: underline;
-}
 
 contact-info1 {
     background-color: #16232e;
@@ -461,4 +421,71 @@ contact-info1 {
     main {
         padding: 1rem;
     }
+}
+
+
+footer {
+    background-color: #1c1f22; /* Dark background */
+    color: white;
+    padding: 30px 20px;
+    font-size: 16px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    text-align: left;
+    padding-bottom: 20px;
+}
+
+.part h3 {
+    color: #4caf50; /* Green heading text */
+    margin-bottom: 15px;
+}
+
+.part a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 8px;
+    transition: color 0.3s ease-in-out;
+}
+
+.part a:hover {
+    color: #4caf50; /* Change color on hover */
+}
+
+.contact-us p {
+    margin: 5px 0;
+}
+
+.social-links .links a {
+    margin-right: 15px;
+    display: inline-block;
+}
+
+.social-links .links svg {
+    fill: white;
+    width: 28px;
+    height: 28px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.social-links .links a:hover svg {
+    transform: scale(1.1);
+    fill: #4caf50; /* Green on hover */
+}
+
+.foot {
+    text-align: center;
+    font-size: 14px;
+    border-top: 1px solid #444;
+    padding-top: 15px;
+}
+
+.foot a {
+    color: #4caf50;
+    text-decoration: none;
+    font-weight: bold;
 }
