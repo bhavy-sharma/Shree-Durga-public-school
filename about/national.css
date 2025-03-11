@@ -1,23 +1,23 @@
 .head{
     padding-left: 30px;
+    background-color: #4caf50;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
 }
-.img{
-   width: 1200px;
-   height: 700px;
-   margin: 30px;
-   border: 4px solid black;
-}
-
 .p1{
     padding-left: 40px;
     padding-top: 40px;
-    font-size: 60px;
+    font-size: 50px;
+    font-weight: bold;
 }
 .p2{
     padding-left: 40px;
     padding-top: 40px;
-   font-size: 25px;
+   font-size: 20px;
 }
 .main-aff{
     padding-top: 60px;
+}
+.img-fluid{
+    border: 2.5px solid black;
 }

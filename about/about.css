@@ -1,12 +1,23 @@
 .col-md-8{
     padding: 40px;
+   font-size: 20px;
+}
+.founder-name{
+    text-align: center;
+}
+.img-fluid{
+    border: 3px solid black;
 }
 .header{
     padding-left: 30px;
+    background-color: #4caf50;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
 }
 .blockquote{
     font-size: 50px;
     padding: 30px;
+    font-weight: bold;
 }
 .col-md-6{
     padding: 50px;
