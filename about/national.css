@@ -3,12 +3,25 @@
     background-color: #4caf50;
     border-bottom-right-radius: 15px;
     border-bottom-left-radius: 15px;
+    border-bottom: 2px solid black;
 }
 .p1{
     padding-left: 40px;
     padding-top: 40px;
     font-size: 50px;
     font-weight: bold;
+}
+h1{
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+.col-md-6 {
+    box-shadow: 15px 4px 15px rgba(20, 20, 20, 0.1);
+}
+.col-md-12{
+    margin-top: 30px;
+    box-shadow: 15px 4px 15px rgba(20, 20, 20, 0.1);
 }
 .p2{
     padding-left: 40px;
@@ -20,7 +33,21 @@
 }
 .img-fluid{
     border: 2.5px solid black;
+    border-radius: 20px;
 }
+
+.col-md-6:hover{
+  transform :scale(1.02);
+  transition: all 0.2s linear;
+  box-shadow: 15px 4px 15px rgba(30, 30, 30, 0.3);
+    
+}
+.col-md-12:hover{
+    transform :scale(1.02);
+    transition: all 0.2s linear;
+    box-shadow: 15px 4px 15px rgba(30, 30, 30, 0.3);
+      
+  }
 
 
 footer {
