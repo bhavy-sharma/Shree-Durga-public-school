@@ -7,13 +7,15 @@
 } */
 .header{
   background-color: #4caf50;
-  height: 105px;
+  height: 100px;
+  border-bottom: 3px solid black;
 }
 .text-center-my-4{
   margin: 40px;
   margin-top: 70px;
   box-shadow: 15px 4px 15px rgba(27, 27, 27,0.1);
   text-align: center;
+  border: 1px solid black;
 }
 .text-center-my-4:hover{
   transform :scale(1.02);
@@ -46,10 +48,30 @@ h1{
 }
 .col-md-6 {
     box-shadow: 15px 4px 15px rgba(20, 20, 20, 0.1);
+    animation: left 0.7s ease-in 0s  reverse ; 
 }
 .col-md-12{
     margin-top: 10px;
     box-shadow: 15px 4px 15px rgba(20, 20, 20, 0.1);
+    animation: right 0.7s ease-in 0s  reverse ;
+}
+@keyframes right {
+  0%{
+      transform: translateX(0px);
+  }
+  100%{
+      transform: translateX(200px);
+  }
+  
+}
+@keyframes left {
+  0%{
+      transform: translateX(0px);
+  }
+  100%{
+      transform: translateX(-200px);
+  }
+  
 }
 .p2{
     padding-left: 40px;
