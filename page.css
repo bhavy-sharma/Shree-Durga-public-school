@@ -564,7 +564,7 @@ nav li ul a:hover {
 }
 
 
-.card-body:hover h5,
+
 .card-body:hover p {
   color: white;
 }
@@ -576,7 +576,9 @@ nav li ul a:hover {
   transition: color 0.3s ease;
 }
 
-
+.card-body h5{
+  color: #063307;
+}
 .btn-link i {
   transition: transform 0.3s ease;
 }
