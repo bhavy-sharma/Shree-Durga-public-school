@@ -67,7 +67,7 @@ body {
   top: 0;
   left: 0;
   right: 0;
-  z-index: 2;
+  z-index: 100;
   transition: top 0.3s ease-in-out;
 }
 
@@ -129,10 +129,14 @@ body {
     display: block;
   }
   .header {
+    height: 20vh;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+  }
+  .header .back{
+    display: none;
   }
 
   .header.hidden {
@@ -266,7 +270,7 @@ nav li ul a:hover {
 
 @media (max-width: 768px) {
   .navbar {
-    margin-top: 250px;
+    margin-top: 20vh;
   }
 
   .navbar-links {
@@ -291,7 +295,7 @@ nav li ul a:hover {
 
 @media (max-width: 375px) {
   .header1 {
-    margin-top: 100px;
+    margin-top: 20vh;
   }
 }
 
@@ -346,7 +350,9 @@ nav li ul a:hover {
   .carousel-item img {
     height: auto;
   }
-
+  .carousel-inner{
+    width: 100vw;
+  }
   .col-md-8,
   .col-md-4 {
     width: 100%;
@@ -444,7 +450,7 @@ nav li ul a:hover {
 } */
 @media (max-width:720px) {
   .container-fluid{
-    margin-top: 130px;
+    margin-top: 20vh;
   }
 }
 
@@ -466,8 +472,9 @@ nav li ul a:hover {
   font-family: "Raleway", sans-serif;
 }
 .about-school img {
-  height: 90%;
+  height: 100%;
   text-align: center;
+  transition: transform 0.3s ease-in-out;
 }
 @media (max-width: 768px) {
   .about-school {
@@ -483,9 +490,20 @@ nav li ul a:hover {
   /* background-color: #; */
   padding: 15px;
 }
+.about-school img:hover{
+  transform: scale(0.9);
+}
 @media (max-width: 768px) {
-  .about {
-    margin: 0;
+  .about-school{
+    height: 100%;
+  }
+  .about-school img{
+    padding: 0;
+    box-sizing: none;
+    width: 100vw;
+  }
+  .teacher{
+    margin-top: 40vh;
   }
 }
 
