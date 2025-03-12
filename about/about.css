@@ -13,8 +13,9 @@ p{
 }
 
 .text-center-my-4{
-    margin: 40px;
+  width: 100%;
     margin-top: 70px;
+    margin-bottom: 20px;
     box-shadow: 15px 4px 15px rgba(27, 27, 27,0.1);
     text-align: center;
     border: 1px solid black;
@@ -81,13 +82,16 @@ p{
   
 .header{
    background-color: #4caf50;
-   height: 100px;
+   height: 130px;
+   width: 100%;
    border-bottom: 3px solid black;
 }
 .blockquote{
     font-size: 40px;
-    padding: 30px;
+   padding-top: 20px;
+   padding-bottom: 20px;
     font-weight: bold;
+    width: 100%;
 }
 h1{
     font-weight: bold;
