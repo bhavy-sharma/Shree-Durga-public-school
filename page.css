@@ -823,3 +823,10 @@ footer {
   justify-content: flex-start !important;
 }
 }
+
+.message {
+  text-align: center;
+  color: cyan;
+  font-weight: bold;
+  margin-top: 20px;
+}
