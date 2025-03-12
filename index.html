@@ -603,7 +603,7 @@
               <!-- Hidden input to indicate Sheet1 -->
         <input type="hidden" name="sheetType" value="Sheet1" />
 
-        
+
               <!-- Submit Button -->
               <div class="row mt-3">
                 <div class="col-12 text-center">
@@ -888,6 +888,11 @@
             console.log("Success!", data);
             document.getElementById("message").textContent =
               "Your Query submitted successfully!";
+              setTimeout(() => {
+                document.getElementById("message").textContent = "";
+            }, 2000); 
+            submitButton.textContent = "Submit";
+            submitButton.disabled = false;
             form.reset(); 
           })
           .catch((error) => {
