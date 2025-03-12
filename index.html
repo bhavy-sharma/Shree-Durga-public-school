@@ -94,30 +94,97 @@
             </li>
 
             <!-- About Us Dropdown -->
-            <li class="nav-item dropdown">
+            <li class="nav-item">
               <a
                 class="nav-link dropdown-toggle"
                 href="#"
-                id="navbarDropdown"
+                id="navbarDropdownAbout"
                 role="button"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
                 About Us
               </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownAbout">
                 <li>
                   <a class="dropdown-item" href="about/about.html"
                     >School History</a
                   >
                 </li>
-                <li><a class="dropdown-item" href="#">Our Team</a></li>
-                <li><a class="dropdown-item" href="#">Contact Us</a></li>
+                <li>
+                  <a class="dropdown-item" href="about/afflication.html"
+                    >Afflication</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="about/cultural.html"
+                    >Cultural Celebration</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="about/national.html"
+                    >National Achievements</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="about/mind-dev.html"
+                    >Mind Development Seminar</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="about/spritiual.html"
+                    >Spiritual Journey</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="about/healthcamp.html"
+                    >Health Camps</a
+                  >
+                </li>
+                <!-- Messages Dropdown -->
+                <li class="dropdown">
+                  <a
+                    class=""
+                    href="#"
+                    id="navbarDropdownMessage"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Messages
+                  </a>
+                  <ul
+                    class="dropdown-menu"
+                    aria-labelledby="navbarDropdownMessage"
+                  >
+                    <li>
+                      <a class="dropdown-item" href="about/manager.html"
+                        >Manager's message</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="about/presidents.html"
+                        >President's message</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="about/principal.html"
+                        >Principal's message</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <!-- End Messages Dropdown -->
+                <li>
+                  <a class="dropdown-item" href="about/top rankers.html"
+                    >Top Rankers</a
+                  >
+                </li>
               </ul>
             </li>
 
             <!-- Gallery Dropdown -->
-            <li class="nav-item dropdown">
+            <li class="nav-item">
               <a
                 class="nav-link dropdown-toggle"
                 href="#"
@@ -136,7 +203,7 @@
             </li>
 
             <!-- Prospectus Dropdown -->
-            <li class="nav-item dropdown">
+            <li class="nav-item">
               <a
                 class="nav-link dropdown-toggle"
                 href="#"
@@ -152,18 +219,27 @@
                 aria-labelledby="navbarDropdownProspectus"
               >
                 <li>
-                  <a class="dropdown-item" href="#">General Information</a>
+                  <a class="dropdown-item" href="prospectous/gernalinfo.html"
+                    >General Information</a
+                  >
                 </li>
                 <li>
-                  <a class="dropdown-item" href="#">Admission & Withdrawal</a>
+                  <a
+                    class="dropdown-item"
+                    href="prospectous/Acadmic Excellence.html"
+                    >Academic Excellence</a
+                  >
                 </li>
-                <li><a class="dropdown-item" href="#">Admission Form</a></li>
-                <li><a class="dropdown-item" href="#">Fee Structure</a></li>
+                <li>
+                  <a class="dropdown-item" href="prospectous/feestructure.html"
+                    >Fee Structure</a
+                  >
+                </li>
               </ul>
             </li>
 
             <!-- Achievements Dropdown -->
-            <li class="nav-item dropdown">
+            <li class="nav-item">
               <a
                 class="nav-link dropdown-toggle"
                 href="#"
@@ -192,34 +268,43 @@
       </nav>
     </div>
     <!-- Navbar End -->
+
     <!-- Slider -->
     <div class="container-fluid p-0">
-      <div class="slider">
-        <div class="slider-track d-flex">
-          <div class="slide">
-            <img
-              src="Material/IMG-20250309-WA0026.jpg"
-              alt="Image 1"
-              class="w-100"
-            />
+      <div
+        id="carouselExampleAutoplaying"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="Material/IMG-20250309-WA0032.jpg" class="d-block w-100" alt="Image" />
           </div>
-          <div class="slide">
-            <img
-              src="Material/IMG-20250309-WA0031.jpg"
-              alt="Image 2"
-              class="w-100"
-            />
+          <div class="carousel-item">
+            <img src="Material/IMG-20250310-WA0013.jpg" class="d-block w-100" alt="..." />
           </div>
-          <div class="slide">
-            <img
-              src="Material/IMG-20250309-WA0032.jpg"
-              alt="Image 3"
-              class="w-100"
-            />
+          <div class="carousel-item">
+            <img src="Material/IMG-20250310-WA0012.jpg" class="d-block w-100" alt="..." />
           </div>
-          <button class="arrow arrow1">&lt;</button>
-          <button class="arrow arrow2">&gt;</button>
         </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
 
       <!-- About of school + Image of school  -->
@@ -256,73 +341,62 @@
       <!-- Teacher section  -->
       <div class="about container my-5">
         <h2 class="teacher">Block Posts</h2>
-        <div class="row">
-          <!-- First row of teacher section  -->
-          <div class="col-md-4">
-            <div class="card">
-              <img
-                src="Material/IMG-20250310-WA0006.jpg"
-                alt="Image"
-                class="card-img-top"
-              />
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col">
+            <div class="card h-100">
+              <img src="img/1.jpeg" class="card-img-top" alt="...">
               <div class="card-body">
-                <h3 class="name">Tour...</h3>
-                <p>
-                  Touring opens the door to adventure, offering a chance to
-                  explore new places, experience different cultures, and create
-                  unforgettable memories. Whether it’s a peaceful getaway to
-                  scenic landscapes or an exciting dive into vibrant cities,
-                  every journey brings a story worth telling. A good tour isn’t
-                  just about the destinations — it’s about the people you meet,
-                  the moments you cherish, and the discoveries you make along
-                  the way.
-                  <a href="#">READ MORE...</a>
-                </p>
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
               </div>
             </div>
           </div>
-
-          <!-- second teacher  -->
-          <div class="col-md-4">
-            <div class="card">
-              <img src="Material/IMG-20250310-WA0011.jpg"Image"
-              class="card-img-top" />
+          <div class="col">
+            <div class="card h-100">
+              <img src="img/1.jpeg" class="card-img-top" alt="...">
               <div class="card-body">
-                <h3 class="name">Teerthdham Mangalayatan'</h3>
-                <p>
-                  Teerthdham Mangalayatan' complex is considered one of the
-                  largest Jain religious centres of its kind in the
-                  country.......<a href="#">READ MORE...</a>
-                </p>
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
               </div>
             </div>
           </div>
-
-          <!-- Third teacher  -->
-          <div class="col-md-4">
-            <div class="card">
-              <img
-                src="Material/IMG-20250310-WA0010.jpg"
-                alt="Image"
-                class="card-img-top"
-              />
+          <div class="col">
+            <div class="card h-100">
+              <img src="img/1.jpeg" class="card-img-top" alt="...">
               <div class="card-body">
-                <h3 class="name">Janmashtami</h3>
-                <p>
-                  Janmashtami is a joyous Hindu festival celebrating the birth
-                  of Lord Krishna, the eighth avatar of Vishnu. It’s marked with
-                  devotion, vibrant decorations, and lively celebrations,
-                  including singing, dancing, and enactments of Krishna’s
-                  childhood stories. Temples are beautifully adorned, and the
-                  famous “Dahi Handi” tradition brings an air of excitement as
-                  people form human pyramids to break a pot of curd, symbolizing
-                  Krishna’s playful nature. The day is filled with prayers,
-                  fasting, and a spirit of love and unity..
-                  <a href="#">READ MORE...</a>
-                </p>
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
               </div>
             </div>
           </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="img/4.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="img/4.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="img/4.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              </div>
+            </div>
+          </div>
+        </div>
         </div>
       </div>
     </div>
@@ -520,55 +594,10 @@
     <!-- hamburger icon dropdown menu  -->
     <script>
       function toggleDropdown() {
-        var dropdown = document.querySelector(".dropdown");
+        let dropdown = document.querySelector(".dropdown");
         dropdown.style.display =
           dropdown.style.display === "block" ? "none" : "block";
       }
-    </script>
-
-    <!-- Slider images  -->
-    <script>
-      const track = document.querySelector(".slider-track");
-      const slides = document.querySelectorAll(".slide");
-      const btnPrev = document.querySelector(".arrow1");
-      const btnNext = document.querySelector(".arrow2");
-      let index = 0;
-
-      function updateSlider() {
-        track.style.transform = `translateX(-${index * 100}%)`;
-      }
-
-      // Automatic Scroll every 2 seconds
-      let autoScroll = setInterval(() => {
-        index = (index + 1) % slides.length;
-        updateSlider();
-      }, 2000);
-
-      // Stop auto scroll on mouseenter
-      const stopAutoScroll = () => clearInterval(autoScroll);
-
-      btnPrev.addEventListener("click", () => {
-        stopAutoScroll();
-        index = index > 0 ? index - 1 : slides.length - 1;
-        updateSlider();
-      });
-
-      btnNext.addEventListener("click", () => {
-        stopAutoScroll();
-        index = (index + 1) % slides.length;
-        updateSlider();
-      });
-
-      document
-        .querySelector(".slider")
-        .addEventListener("mouseenter", stopAutoScroll);
-
-      document.querySelector(".slider").addEventListener("mouseleave", () => {
-        autoScroll = setInterval(() => {
-          index = (index + 1) % slides.length;
-          updateSlider();
-        }, 2000);
-      });
     </script>
 
     <!-- on 20% scroll nav bar is hide  -->
@@ -597,6 +626,45 @@
         lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
       });
     </script>
+
+    <script>
+      let AboutDropdown = document.getElementById("navbarDropdownAbout");
+      AboutDropdown.addEventListener("mouseenter", function (event) {
+        let menu = this.nextElementSibling;
+        let isVisible = menu.style.display === "block";
+        menu.style.display = isVisible ? "none" : "block";
+      });
+      let ProspectusDropdown = document.getElementById(
+        "navbarDropdownProspectus"
+      );
+      ProspectusDropdown.addEventListener("mouseenter", function (event) {
+        let menu = this.nextElementSibling;
+        let isVisible = menu.style.display === "block";
+        menu.style.display = isVisible ? "none" : "block";
+      });
+      let AchievementDropdown = document.getElementById(
+        "navbarDropdownAchievements"
+      );
+      AchievementDropdown.addEventListener("mouseenter", function (event) {
+        let menu = this.nextElementSibling;
+        let isVisible = menu.style.display === "block";
+        menu.style.display = isVisible ? "none" : "block";
+      });
+      let GalleryDropdown = document.getElementById("navbarDropdownGallery");
+      GalleryDropdown.addEventListener("mouseenter", function (event) {
+        let menu = this.nextElementSibling;
+        let isVisible = menu.style.display === "block";
+        menu.style.display = isVisible ? "none" : "block";
+      });
+      let messageDropdown = document.getElementById("navbarDropdownMessage");
+      messageDropdown.addEventListener("mouseenter", function (event) {
+        let menu = this.nextElementSibling;
+        let isVisible = menu.style.display === "block";
+        menu.style.display = isVisible ? "none" : "block";
+      });
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
