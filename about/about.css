@@ -13,6 +13,7 @@ p{
 
 .text-center-my-4{
     margin: 40px;
+    margin-top: 70px;
     box-shadow: 15px 4px 15px rgba(27, 27, 27,0.1);
     text-align: center;
 }
@@ -78,9 +79,10 @@ p{
   
 .header{
    background-color: #4caf50;
+   height: 105px;
 }
 .blockquote{
-    font-size: 50px;
+    font-size: 40px;
     padding: 30px;
     font-weight: bold;
 }
