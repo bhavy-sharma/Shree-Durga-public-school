@@ -1,0 +1,130 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: url('bak1.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: rgb(173, 88, 88);
+}
+
+h1 {
+    font-size: 30px; 
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif; 
+    color: #171411;
+    text-align: left; 
+    margin-left: 20px; 
+    text-transform: uppercase; 
+    letter-spacing: 2px; 
+}
+
+/* Image Grid - Responsive Fix */
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Responsive columns */
+    gap: 15px;
+    max-width: 1000px;
+    margin: auto;
+    padding: 10px;
+}
+
+.image-grid img {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.4s ease-in-out;
+    border-radius: 10px;
+}
+
+.image-grid img:hover {
+    transform: scale(1.08);
+}
+
+/* Lightbox */
+.lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    backdrop-filter: blur(8px);
+}
+
+.lightbox-content {
+    position: relative;
+    width: 90%;
+    max-width: 800px;
+}
+
+.lightbox img {
+    width: 100%;
+    height: auto;
+    max-height: 90vh;
+    transition: transform 1s ease-in-out;
+    box-shadow: 0px 0px 30px yellow;
+    border-radius: 12px;
+    object-fit: contain;
+}
+
+.lightbox .close {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+}
+
+.lightbox .prev,
+.lightbox .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.5);
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.lightbox .prev:hover,
+.lightbox .next:hover {
+    background: rgba(255, 255, 0, 0.8);
+}
+
+.lightbox .prev { left: 10px; }
+.lightbox .next { right: 10px; }
+
+/* ✅ Responsive Fix for Different Screens */
+@media screen and (max-width: 1024px) {
+    .image-grid {
+        grid-template-columns: repeat(3, 1fr); /* 3 columns on tablets */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .image-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns on smaller tablets */
+    }
+
+    .lightbox img {
+        max-width: 80%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .image-grid {
+        grid-template-columns: 1fr; /* 1 column on mobile */
+    }
+
+    .lightbox img {
+        max-width: 90%;
+    }
+}

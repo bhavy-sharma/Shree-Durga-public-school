@@ -321,10 +321,6 @@ nav li ul a:hover {
   transition: transform 1s ease-in-out;
 }
 
-.col-md-4 {
-  height: 100vh;
-}
-
 .col-md-4 .right-text {
   text-align: center;
   color: #063307;
@@ -355,7 +351,15 @@ nav li ul a:hover {
 .carousel-inner {
   transition: transform 1s ease-in-out;
 }
-
+  .col-md-8{
+    width: 100vw;
+  }
+.col-md-4{
+  margin: auto;
+}
+.right-text-container{
+  width: 100vw;
+}
 @media (max-width: 768px) {
   .carousel-item img {
     height: auto;

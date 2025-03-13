@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShreeDurgaPublicSchool</title>
+    <link rel="stylesheet" href="big.css">
+    <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+  />
+  <!-- <link rel="stylesheet" href="photoindex.css" /> -->
+  <style>
+    header h1{
+        text-align: center;
+    }
+    header .center{
+        text-align: center;
+    }
+    header a:hover{
+        text-decoration: none;
+    }
+    .header {
+      background-color: #004d40;
+      padding: 1rem;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Header and Navigation styles */
+    nav {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+    }
+
+    /* School name */
+    nav h1 {
+      color: white;
+      font-size: 1.5rem;
+    }
+
+    /* Navigation links */
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 2rem;
+    }
+
+    /* Navigation link styles */
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      padding: 0.8rem 1.5rem;
+      transition: all 0.3s ease;
+    }
+
+    /* Hover effect on links */
+    nav ul li a:hover {
+      text-decoration: none;
+      background-color: #00695c;
+      color: white;
+      border-radius: 4px;
+    }
+
+    /* Hamburger menu - hidden by default */
+    .hamburger {
+      display: none;
+      cursor: pointer;
+      flex-direction: column;
+      justify-content: space-around;
+      width: 30px;
+      height: 25px;
+      z-index: 1000;
+    }
+
+    /* Hamburger menu bars */
+    .hamburger span {
+      display: block;
+      width: 100%;
+      height: 3px;
+      background: white;
+      border-radius: 3px;
+      transition: all 0.3s ease;
+    }
+    .main {
+      margin-top: 70px !important;
+    }
+
+    /* Media query for mobile screens */
+    @media (max-width: 768px) {
+      /* Display the hamburger menu on smaller screens */
+      .hamburger {
+        display: flex;
+      }
+
+      /* Initially hide the navigation menu */
+      nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #004d40;
+        padding: 1rem 0;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+
+      /* Show the navigation menu when active */
+      nav ul.active {
+        display: flex;
+      }
+
+      /* Style the links in the mobile view */
+      nav ul li a {
+        display: block;
+        padding: 1rem;
+        text-align: center;
+        width: 100%;
+      }
+    }
+    footer {
+      margin-top: 40px;
+      background-color: #1c1f22; /* Dark background */
+      color: white;
+      padding: 30px 20px;
+      font-size: 16px;
+    }
+
+    .footer {
+      display: flex;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+      text-align: left;
+      padding-bottom: 20px;
+    }
+
+    .part h3 {
+      color: #4caf50; /* Green heading text */
+      margin-bottom: 15px;
+    }
+
+    .part a {
+      color: white;
+      text-decoration: none;
+      display: block;
+      transition: color 0.3s ease-in-out;
+    }
+
+    .part a:hover {
+      color: #4caf50; /* Change color on hover */
+    }
+
+    .contact-us p {
+      margin: 5px 0;
+    }
+
+    .social-links .links a {
+      margin-right: 15px;
+      display: inline-block;
+    }
+
+    .social-links .links svg {
+      fill: white;
+      width: 28px;
+      height: 28px;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .social-links .links a:hover svg {
+      transform: scale(1.1);
+      fill: #4caf50; /* Green on hover */
+    }
+
+    .foot {
+      text-align: center;
+      font-size: 14px;
+      border-top: 1px solid #444;
+      padding-top: 15px;
+    }
+
+    .foot a {
+      color: #4caf50;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    @media (max-width: 758px) {
+      .header h1{
+          text-align: center;
+      }
+      .main{
+          margin-top: 95px !important;
+      }
+      .footer {
+        align-items: flex-start;
+        justify-content: flex-start !important;
+      }
+    }
+  </style>
+</head>
+<body>
+    <div class="header">
+        <nav>
+          <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <h1>Shree Durga Public School</h1>
+          <ul>
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="../print media new/media.html">Media Gallery</a></li>
+            <li><a href="about.html">Video Gallery </a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="main">
+    <header>
+        <h1>Independence Day Celebration</h1>
+        <div class="center">
+        <a href="photoindex.html" class="back-button">⬅ Back to Gallery</a>
+    </div>
+    </header>
+
+    <section class="content">
+        <p>🇮🇳🎉 Grand Independence Day Celebration at Shree Durga Public School 🎊✨
+
+            Shree Durga Public School celebrated Independence Day with immense patriotism and enthusiasm. 🎆🇮🇳 The entire school was decorated with tricolor flags, balloons, and rangoli 🎨🏵, creating a vibrant atmosphere of national pride. 🏫✨
+            
+            The event began with the hoisting of the national flag 🇮🇳🚩 by the Principal and school management, followed by the singing of the national anthem 🎶🎤, filling the air with a deep sense of unity. Students showcased their talent through patriotic speeches 📜🗣, soulful songs 🎵, and mesmerizing dance performances 💃🕺 dedicated to our freedom fighters.
+            
+            A special skit on India's struggle for independence 🎭🔥 was performed, inspiring students to value the sacrifices made for the nation's freedom. The highlight of the event was the march-past and cultural parade 🚶‍♂🚶‍♀, showcasing the rich diversity of India. 🌍🎊
+            
+            The Principal and teachers encouraged students to uphold the values of freedom, unity, and responsibility 🙏📖. The celebration concluded with sweet distribution 🍬🍛 and patriotic chants of "Bharat Mata Ki Jai!" 🇮🇳💖
+            
+            #IndependenceDay #ShreeDurgaPublicSchool #ProudToBeIndian #JaiHind
+            .</p>
+    </section>
+
+    <div class="photo-gallery">
+        <img src="independence1.jpg" onclick="openLightboxWithNavigation(this)">
+        <img src="independence2.jpg" onclick="openLightboxWithNavigation(this)">
+        <img src="independence3.jpg" onclick="openLightboxWithNavigation(this)">
+        <img src="independence4.jpg" onclick="openLightboxWithNavigation(this)">
+        <img src="independence5.jpg" onclick="openLightboxWithNavigation(this)">
+        <img src="independence6.jpg" onclick="openLightboxWithNavigation(this)">
+        <img src="independence7.jpg" onclick="openLightboxWithNavigation(this)">
+        <img src="independence8.jpg" onclick="openLightboxWithNavigation(this)">
+       
+    </div>
+
+    <!-- Lightbox -->
+    <div id="lightbox" onclick="closeLightbox()">
+        <img id="lightbox-img">
+    </div>
+</div>
+
+<!-- footer section of Main page  -->
+<footer class="bg-dark text-white">
+    <div class="footer d-flex justify-content-evenly align-items-evenly">
+      <div class="navigation-link part">
+        <h3>Quick Links</h3>
+        <a href="../../index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="../../index.html#Admission" class="nav-link"
+          >Admission Process</a
+        >
+        <a href="../../prospectous/gernalinfo.html" class="nav-link"
+          >Prospectus</a
+        >
+      </div>
+      <div class="contact-us part">
+        <h3>Contact Us</h3>
+        <p>Vilage Daulatpur Khur, Tehsil Dibai</p>
+        <p>Distract Bulandshahr</p>
+        <p>Mobile: 9811838668, 9510730154</p>
+        <p>Office: 9759820767</p>
+        <p>Email: knikupadhyaya@gmail.com</p>
+      </div>
+      <div class="social-links part">
+        <h3>Follow Us</h3>
+        <p>Connect with us on social media for latest updates and events.</p>
+
+        <div class="links">
+          <a
+            href="https://www.facebook.com/ShreeDurgaPublicSchool"
+            target="_blank"
+          >
+            <i class="bi bi-facebook icon-large">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                class="bi bi-facebook"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"
+                />
+              </svg>
+            </i>
+          </a>
+          <a
+            href="https://api.whatsapp.com/send?phone=9759820767"
+            target="_blank"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="30"
+              height="30"
+              fill="currentColor"
+              class="bi bi-whatsapp icon-large"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"
+              />
+            </svg>
+          </a>
+          <a
+            href="https://www.youtube.com/@ShreeDurgaPublicSchool"
+            target="_blank"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="30"
+              height="30"
+              fill="currentColor"
+              class="bi bi-youtube icon-large"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="foot text-center">
+      <p>
+        Copyright © 2025 Shri Durga Public School All rights reserved<br />
+        Website Designed and maintained by
+        <a
+          href="https://bhavy-sharma.github.io/Warrior-World/"
+          class="nav-link inline"
+          >Desk Warriors</a
+        >
+      </p>
+    </div>
+  </footer>
+
+  <script>
+    const hamburger = document.querySelector(".hamburger");
+    const navMenu = document.querySelector("nav ul");
+
+    // Toggle menu on hamburger click
+    hamburger.addEventListener("click", (e) => {
+      e.stopPropagation();
+      hamburger.classList.toggle("active");
+      navMenu.classList.toggle("active");
+    });
+
+    // Close menu when clicking outside
+    document.addEventListener("click", (e) => {
+      if (!navMenu.contains(e.target) && !hamburger.contains(e.target)) {
+        hamburger.classList.remove("active");
+        navMenu.classList.remove("active");
+      }
+    });
+
+    // Close menu when clicking a link
+    document.querySelectorAll("nav ul li a").forEach((link) => {
+      link.addEventListener("click", () => {
+        hamburger.classList.remove("active");
+        navMenu.classList.remove("active");
+      });
+    });
+  </script>
+    <!-- JavaScript Link -->
+    <script src="all.js"></script>
+
+</body>
+</html>
