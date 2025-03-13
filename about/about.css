@@ -200,9 +200,9 @@ h1 {
   font-size: 60px;
   text-underline-position: below;
 }
-.main-aff {
+/* .main-aff {
   padding-top: 60px;
-}
+} */
 .col-md-6 {
   padding: 50px;
   box-shadow: 15px 4px 15px rgba(27, 27, 27, 0.1);
