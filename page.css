@@ -943,6 +943,8 @@ footer {
   padding: 16px;
   font-size: 16px;
   border: none;
+  transition: all 0.3s ease;
+
 }
 
 /* The container <div> - needed to position the dropdown content */
@@ -955,25 +957,65 @@ footer {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
+  background-color: #f9f9f9;
+  min-width: 230px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-20px);
+  transition: all 0.3s ease;
+  /* text-align:left; */
 }
 
-/* Links inside the dropdown */
+.dropdown:hover .dropdown-content {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+/* Style the dropdown links with transitions */
 .dropdown-content a {
   color: black;
-  /* padding: 10px 12px; */
+  padding: 0px 10px;
   text-decoration: none;
-  display: block;
+  display:block ;
+  transition: all 0.2s ease;
+  text-align:left;
+  text-transform:uppercase;
 }
 
-/* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #ddd;}
+.dropdown-content a:hover {
+  background-color: #ddd;
+  padding-left: 25px; 
+  color: #4caf50;
+}
 
-/* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {display: block;}
+/* Style for nested dropdowns with transitions */
+.dropdown .dropdown .dropdown-content {
+  left: 100%;
+  top: 0;
+  transform: translateX(-20px);
+  transition: all 0.3s ease;
+}
 
-/* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover .dropbtn {background-color: #00ff08;}
+.dropdown .dropdown:hover .dropdown-content {
+  transform: translateX(0);
+}
+
+/* Smooth transition for dropdown button */
+.dropbtn {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  /* padding: 16px; */
+  font-size: 16px;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: rgb(69, 208, 74);
+  color: white;
+  transform: scale(1.05);
+}

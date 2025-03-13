@@ -11,17 +11,17 @@ function incrementNumbers() {
     let teamCount = 0;
 
     const interval = setInterval(() => {
-        if (projectCount <= 2000) {
+        if (projectCount <= 100) {
             projects.textContent = `${projectCount}+`;
             projectCount++;
         }
         
-        if (clientCount <= 4000) {
+        if (clientCount <= 100) {
             clients.textContent = `${clientCount}+`;
             clientCount++;
         }
 
-        if (satisfactionPercent <= 98) {
+        if (satisfactionPercent <= 100) {
             satisfaction.textContent = `${satisfactionPercent}%`;
             satisfactionPercent++;
         }
@@ -32,10 +32,10 @@ function incrementNumbers() {
         }
 
         // Stop incrementing when all values are reached
-        if (projectCount > 2000 && clientCount > 4000 && satisfactionPercent > 98 && teamCount > 30) {
+        if (projectCount > 100 && clientCount > 200 && satisfactionPercent > 98 && teamCount > 30) {
             clearInterval(interval);
         }
-    }, 50); // Adjust speed by changing interval time
+    }, 20); // Adjust speed by changing interval time
 }
 
 // Start incrementing numbers when the page loads

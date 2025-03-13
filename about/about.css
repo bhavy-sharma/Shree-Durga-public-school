@@ -147,9 +147,10 @@ p {
 }
 .anker:hover {
   color: orangered;
-  transition: all 0.3s linear;
+  transition: all 0.8s ease;
   animation: tags 2s ease-out 1 repeat;
   display: block;
+  padding: 0px 10px;
 }
 
 @keyframes tags {
