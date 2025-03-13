@@ -80,7 +80,7 @@ header {
 
 /* Image Hover Effect */
 .topic img:hover {
-    transform: scale(1.08);
+    transform: scale(0.9);
     filter: brightness(1.2);
 }
 
