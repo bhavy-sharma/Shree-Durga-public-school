@@ -418,20 +418,20 @@ nav li ul a:hover {
 .hover-box:nth-child(3) { top: 40px; z-index: 3; }
 @media(max-width:1020px) {
   .col-md-4{
-    height: 100%;
+    height: 80%;
   }
   .stack-container{
     height: 200px;
   }
   .hover-box{
     height: 200px;
-    position: absolute;
+    /* position: absolute; */
     left: 0;
   }
 }
 @media(max-width:720px){
   .right-text{
-    height: 100%;
+    height: 90%;
   background-color: transparent;
   box-shadow: none;
   }
@@ -440,7 +440,7 @@ nav li ul a:hover {
   }
   .hover-box{
     height: 190px;
-    position: absolute;
+    /* position: absolute; */
     left: 0;
   }
   .hover-box:nth-child(1) { top: 0px; z-index: 3; }
