@@ -60,3 +60,12 @@ Shree Durga Public School has made significant strides in academic and co-curric
 - Awards in cultural and extracurricular activities
 
 ---
+
+## 7. Student Development Programs
+The school believes in holistic development and offers various student-focused programs:
+
+- **Counseling Services:** Regular counseling sessions to support mental well-being.
+- **Skill Development:** Programs focusing on leadership, teamwork, and communication skills.
+- **Cultural Exchange Programs:** Opportunities for students to interact with peers from other schools and countries.
+
+---
