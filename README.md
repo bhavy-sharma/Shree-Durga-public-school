@@ -27,3 +27,17 @@ Shree Durga Public School is a renowned educational institution located in [inse
 - **Vision:** To create responsible global citizens who excel in their chosen fields and contribute to society with integrity and compassion.
 
 ---
+
+
+## 4. Facilities
+Shree Durga Public School offers a range of world-class facilities to enhance the learning experience for its students:
+
+- **Classrooms:** Spacious, well-ventilated, and equipped with modern teaching aids.
+- **Laboratories:** Well-equipped science, computer, and language laboratories.
+- **Library:** A well-stocked library with books, journals, and digital resources.
+- **Sports:** A playground, sports equipment, and training for various sports like cricket, football, basketball, and athletics.
+- **Transportation:** School buses for safe transportation of students.
+- **Cafeteria:** Hygienic and nutritious food served to students.
+- **Medical Room:** Well-equipped first aid and healthcare facilities.
+
+---
