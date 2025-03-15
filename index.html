@@ -503,7 +503,7 @@
     </div>
     <div class="page">
     <div class="page-wrapper">
-      <h1>Shree Durga Public Scool</h1>
+      <h1>Shree Durga Public Shcool</h1>
       <p>A Truly and Trust worthy Primary School</p>
 
       <div class="container">
@@ -618,20 +618,23 @@
 
     <!-- Banner  -->
     <script>
-      window.onload = function () {
+      document.addEventListener("DOMContentLoaded", function () {
         let banner = document.getElementById("banner");
         let body = document.body;
-
+      
         // Show the banner
         banner.style.display = "flex";
         body.classList.add("blur");
-
+      
         // Hide the banner when clicked
-        banner.addEventListener("click", function () {
+        banner.addEventListener("click", function (event) {
           banner.style.display = "none";
           body.classList.remove("blur");
+      
+          // Prevent the click from propagating to any other handlers
+          event.stopPropagation();
         });
-      };
+      });
     </script>
 
     <!-- hamburger icon dropdown menu  -->
