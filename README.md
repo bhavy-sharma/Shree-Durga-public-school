@@ -20,3 +20,10 @@ Shree Durga Public School is a renowned educational institution located in [inse
 - **Contact:** [Phone Number, Email, Website, etc.]
 
 ---
+
+## 3. Mission and Vision
+
+- **Mission:** To provide a nurturing environment where students develop academic knowledge, moral values, creativity, and social responsibility.
+- **Vision:** To create responsible global citizens who excel in their chosen fields and contribute to society with integrity and compassion.
+
+---
