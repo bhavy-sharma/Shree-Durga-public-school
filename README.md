@@ -1,1 +1,1 @@
-# Shree-Durga-public-school
+# School Project: Shree Durga Public School
