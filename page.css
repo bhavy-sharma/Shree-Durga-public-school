@@ -1019,3 +1019,15 @@ footer {
   color: white;
   transform: scale(1.05);
 }
+
+@media (max-width:758px) {
+  .msg{
+    position: relative;
+    left: -55px;
+    display: inline;
+  }
+  .msg button{
+    text-transform: uppercase;
+    font-size: 13px;
+  }
+}
