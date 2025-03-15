@@ -1046,3 +1046,12 @@ footer {
 .carousel-control-prev{
   margin-top: 150px;
 }
+
+
+.carousel-control-next{
+  margin-bottom: 150px;
+}
+
+.carousel-control-prev{
+  margin-bottom: 150px;
+}
