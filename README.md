@@ -50,3 +50,13 @@ Shree Durga Public School follows the [Insert Board Name] curriculum, focusing o
 - **Sports & Physical Education:** Emphasis on fitness, sportsmanship, and physical development.
 
 ---
+
+
+## 6. Achievements
+Shree Durga Public School has made significant strides in academic and co-curricular achievements. Some of the notable accomplishments include:
+
+- Top performances in board exams
+- Excellence in sports events at district and state levels
+- Awards in cultural and extracurricular activities
+
+---
