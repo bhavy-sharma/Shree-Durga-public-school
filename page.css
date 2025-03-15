@@ -1019,15 +1019,20 @@ footer {
   color: white;
   transform: scale(1.05);
 }
-
+.msg{
+  position: relative;
+  left: -55px;
+  display: inline;
+}
+.msg button{
+  text-transform: uppercase;
+  font-size: 13px;
+}
 @media (max-width:758px) {
-  .msg{
-    position: relative;
-    left: -55px;
-    display: inline;
-  }
-  .msg button{
-    text-transform: uppercase;
-    font-size: 13px;
+  .dropdown .dropdown .dropdown-content {
+    left: 100%;
+    top: 0;
+    transform: translate(-40px);
+    transition: all 0.3s ease;
   }
 }
