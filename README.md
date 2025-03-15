@@ -6,3 +6,17 @@
 Shree Durga Public School is a renowned educational institution located in [insert city/area], committed to providing quality education and holistic development for students. Established with the vision of nurturing well-rounded individuals, the school focuses on academic excellence, sports, extracurricular activities, and the overall development of students.
 
 ---
+
+## 2. School Overview
+
+- **Name:** Shree Durga Public School
+- **Location:** [Insert Address]
+- **Established:** [Insert Year]
+- **Motto:** [Insert School Motto, if available]
+- **Type of School:** Co-educational, English Medium
+- **Affiliation:** [Board of Affiliation, such as CBSE, State Board, etc.]
+- **Grades Offered:** [List Grade Levels, e.g., Nursery to 12th Grade]
+- **Principal:** [Insert Principal’s Name]
+- **Contact:** [Phone Number, Email, Website, etc.]
+
+---
