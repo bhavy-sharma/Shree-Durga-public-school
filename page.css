@@ -173,11 +173,11 @@ body {
 
 nav ul {
   -webkit-font-smoothing: antialiased;
-  list-style: none;
-  margin: 0;
-  padding: 0;
+  /* list-style: none; */
+  /* margin: 0; */
+  /* padding: 0; */
   width: 100%;
-  display: flex;
+  /* display: flex; */
   align-items: center;
   justify-content: space-evenly;
 }
@@ -336,6 +336,7 @@ nav li ul a:hover {
 .carousel-control-prev-icon:hover,
 .carousel-control-next-icon:hover {
   background-color: var(--primary-color);
+  height: 50px;
   border-radius: 50%;
   color: #063307;
 }
@@ -1035,4 +1036,13 @@ footer {
     transform: translate(-40px);
     transition: all 0.3s ease;
   }
+}
+
+
+.carousel-control-next{
+  margin-top: 150px;
+}
+
+.carousel-control-prev{
+  margin-top: 150px;
 }
