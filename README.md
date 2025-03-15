@@ -41,3 +41,12 @@ Shree Durga Public School offers a range of world-class facilities to enhance th
 - **Medical Room:** Well-equipped first aid and healthcare facilities.
 
 ---
+
+## 5. Curriculum
+Shree Durga Public School follows the [Insert Board Name] curriculum, focusing on:
+
+- **Academic Excellence:** Core subjects include Mathematics, Science, Social Studies, Languages, etc.
+- **Co-Curricular Activities:** Music, Dance, Art, Drama, and other clubs to encourage students' creativity.
+- **Sports & Physical Education:** Emphasis on fitness, sportsmanship, and physical development.
+
+---
