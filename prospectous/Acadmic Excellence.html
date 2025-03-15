@@ -207,13 +207,14 @@
         left: 0;
         width: 100%;
         padding: 1rem;
-        background: linear-gradient(transparent, rgba(255, 255, 255, 0.9) 40%);
+        background: linear-gradient(transparent, rgba(255, 255, 255, 0.95) 40%);
         border: none;
         color: #3498db;
         font-weight: bold;
         cursor: pointer;
         transition: all 0.3s ease;
         text-align: center;
+        z-index: 20;
       }
 
       .show-more-btn:hover {
@@ -542,7 +543,7 @@
                 </li>
               </ul>
             </div>
-            <button class="show-more-btn">Show More</button>
+            <button class="show-more-btn mera">Show More</button>
           </div>
         </div>
       </div>
@@ -683,7 +684,7 @@
 
           // Check if content needs a show more button
           if (content.scrollHeight <= 300) {
-            btn.style.display = "none";
+            <!-- btn.style.display = "none"; -->
           } else {
             btn.addEventListener("click", () => {
               card.classList.toggle("expanded");
