@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>School Sports</title>
+  <link rel="stylesheet" href="SportsActivities.css">
+  <link
+  rel="stylesheet"
+  href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+/>
+<style>
+  header h1{
+      text-align: center;
+  }
+  header .center{
+      text-align: center;
+  }
+  header a:hover{
+      text-decoration: none;
+  }
+  .header {
+    background-color: #004d40;
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Header and Navigation styles */
+  nav {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
+
+  /* School name */
+  nav h1 {
+    color: white;
+    font-size: 1.5rem;
+  }
+
+  /* Navigation links */
+  nav ul {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+  }
+
+  /* Navigation link styles */
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 0.8rem 1.5rem;
+    transition: all 0.3s ease;
+  }
+
+  /* Hover effect on links */
+  nav ul li a:hover {
+    text-decoration: none;
+    background-color: #00695c;
+    color: white;
+    border-radius: 4px;
+  }
+
+  /* Hamburger menu - hidden by default */
+  .hamburger {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 25px;
+    z-index: 1000;
+  }
+
+  /* Hamburger menu bars */
+  .hamburger span {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background: white;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+  }
+  .main {
+    margin-top: 70px !important;
+  }
+
+  /* Media query for mobile screens */
+  @media (max-width: 768px) {
+    /* Display the hamburger menu on smaller screens */
+    .hamburger {
+      display: flex;
+    }
+
+    /* Initially hide the navigation menu */
+    nav ul {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      background-color: #004d40;
+      padding: 1rem 0;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Show the navigation menu when active */
+    nav ul.active {
+      display: flex;
+    }
+
+    /* Style the links in the mobile view */
+    nav ul li a {
+      display: block;
+      padding: 1rem;
+      text-align: center;
+      width: 100%;
+    }
+  }
+  footer {
+    margin-top: 40px;
+    background-color: #1c1f22; /* Dark background */
+    color: white;
+    padding: 30px 20px;
+    font-size: 16px;
+  }
+
+  .footer {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    text-align: left;
+    padding-bottom: 20px;
+  }
+
+  .part h3 {
+    color: #4caf50; /* Green heading text */
+    margin-bottom: 15px;
+  }
+
+  .part a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    transition: color 0.3s ease-in-out;
+  }
+
+  .part a:hover {
+    color: #4caf50; /* Change color on hover */
+  }
+
+  .contact-us p {
+    margin: 5px 0;
+  }
+
+  .social-links .links a {
+    margin-right: 15px;
+    display: inline-block;
+  }
+
+  .social-links .links svg {
+    fill: white;
+    width: 28px;
+    height: 28px;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .social-links .links a:hover svg {
+    transform: scale(1.1);
+    fill: #4caf50; /* Green on hover */
+  }
+
+  .foot {
+    text-align: center;
+    font-size: 14px;
+    border-top: 1px solid #444;
+    padding-top: 15px;
+  }
+
+  .foot a {
+    color: #4caf50;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  @media (max-width: 758px) {
+    .header h1{
+        text-align: center;
+    }
+    .main{
+        margin-top: 95px !important;
+    }
+    .footer {
+      align-items: flex-start;
+      justify-content: flex-start !important;
+    }
+  }
+</style>
+</head>
+<body>
+  <div class="header">
+    <nav>
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <h1>Shree Durga Public School</h1>
+      <ul>
+        <li><a href="../../index.html">Home</a></li>
+        <li><a href="Acadmic Achievers.htm">Academic Achievments</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="main">
+  <!-- <header>
+    <div class="logo">
+      <h2>Shree Durga Public School</h2>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#Chess">Chess</a></li>
+        <li><a href="#volleyball">Volleyball</a></li>
+        <li><a href="#basketball">Basketball</a></li>
+        <li><a href="#cricket">Cricket</a></li>
+        <li><a href="#Kho-Kho">Kho-Kho</a></li>
+        <li><a href="#Badminton">Badminton</a></li>
+        <li><a href="#Carrom">Carrom</a></li>
+      </ul>
+    </nav>
+  </header> -->
+
+  <section class="hero">
+    <div class="hero-content">
+      <h2>Welcome to Our School Activities..</h2>
+      <p>Explore our exciting sports programs and get involved!</p>
+    </div>
+  </section>
+
+  <div class="sports-container">
+    <section id="Chess" class="sport-section">
+      <div class="sport-content">
+        <div class="sport-image" style="background-image: url('Chess.jpeg');"></div>
+        <div class="sport-info">
+          <h2>&#9823; Chess: The Game of Kings</h2>
+          <p>
+            Join our chess team and sharpen your skills! Whether you're new or experienced, you'll grow, compete, and be part of a winning team. Don't miss out—sign up today!
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="volleyball" class="sport-section">
+      <div class="sport-content">
+        <div class="sport-image" style="background-image: url('volleyball.jpg');"></div>
+        <div class="sport-info">
+          <h2>&#x1F3D0; Volleyball: Teamwork, Fun, and Fitness</h2>
+          <p>Our volleyball program focuses on teamwork and skill development, offering a competitive atmosphere for all students.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="basketball" class="sport-section">
+      <div class="sport-content">
+        <div class="sport-image" style="background-image: url('basketball.jpg');"></div>
+        <div class="sport-info">
+          <h2>&#x1F3C0; Join the Basketball Team</h2>
+          <p>Join our basketball teams and participate in thrilling games. Our teams train rigorously and have participated in several regional tournaments.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="cricket" class="sport-section">
+      <div class="sport-content">
+        <div class="sport-image" style="background-image: url('cricket.jpg');"></div>
+        <div class="sport-info">
+          <h2>&#127951; Cricket: A Game of Strategy and Skill</h2>
+          <p>Cricket has a rich tradition at our school. Our teams compete in various local and national tournaments every season.</p>
+        </div>
+      </div>
+    </section>
+<section id="Kho-Kho" class="sport-section">
+      <div class="sport-content">
+        <div class="sport-image" style="background-image: url('KhoKho.jpg');"></div>
+        <div class="sport-info">
+          <h2>&#x1F3C3; Kho-Kho: Speed, Agility, and Strategy</h2>
+          <p>Join our Kho-Kho team for fun, fitness, and teamwork! Improve your speed and strategy while being part of an exciting group. Sign up today!</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="Badminton" class="sport-section">
+      <div class="sport-content">
+        <div class="sport-image" style="background-image: url('Badminton.jpg');"></div>
+        <div class="sport-info">
+          <h2>&#x1f3f8;Badminton: Unleash Your Potential on the Court</h2>
+          <p>Join our Badminton team to improve your skills, stay active, and compete with the best. Sign up now and play your way to victory!</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="Carrom" class="sport-section">
+      <div class="sport-content">
+        <div class="sport-image" style="background-image: url('Carrom.jpeg');"></div>
+        <div class="sport-info">
+          <h2>🧩Carrom Board: Sharpen Your Mind and Skills</h2>
+          <p>Join our Carrom team, sharpen your skills, and have fun competing! Sign up today and be part of the action!</p>
+        </div>
+      </div>
+    </section>
+    <section id="Carrom" class="sport-section">
+      <div class="sport-content">
+        <div class="sport-image" style="background-image: url('Tug\ Of\ War.jpg');"></div>
+        <div class="sport-info">
+          <h2>Tug of War Team – Strength, Teamwork, Victory!</h2>
+          <p>Test your strength, build teamwork, and compete for victory. Sign up today and pull together for success!</p>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>
+
+<!-- footer section of Main page  -->
+<footer class="bg-dark text-white">
+    <div class="footer d-flex justify-content-evenly align-items-evenly">
+      <div class="navigation-link part">
+        <h3>Quick Links</h3>
+        <a href="../../index.html" class="nav-link">Home</a>
+        <a href="../../about/about.html" class="nav-link">About</a>
+        <a href="../../index.html#Admission" class="nav-link"
+          >Admission Process</a
+        >
+        <a href="../../prospectous/gernalinfo.html" class="nav-link"
+          >Prospectus</a
+        >
+      </div>
+      <div class="contact-us part">
+        <h3>Contact Us</h3>
+          <p>Village Daulatpur Khur, Tehsil Dibai</p>
+          <p>District  Bulandshahr</p>
+          <p>Mobile: 9811838668, 9510730154</p>
+          <p>Office: 9759820767</p>
+          <p>Email: knikupadhyaya@gmail.com</p>
+      </div>
+      <div class="social-links part">
+        <h3>Follow Us</h3>
+        <p>Connect with us on social media for latest updates and events.</p>
+
+        <div class="links">
+          <a
+            href="https://www.facebook.com/ShreeDurgaPublicSchool"
+            target="_blank"
+          >
+            <i class="bi bi-facebook icon-large">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                class="bi bi-facebook"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"
+                />
+              </svg>
+            </i>
+          </a>
+          <a
+            href="https://api.whatsapp.com/send?phone=9759820767"
+            target="_blank"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="30"
+              height="30"
+              fill="currentColor"
+              class="bi bi-whatsapp icon-large"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"
+              />
+            </svg>
+          </a>
+          <a
+            href="https://www.youtube.com/@ShreeDurgaPublicSchool"
+            target="_blank"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="30"
+              height="30"
+              fill="currentColor"
+              class="bi bi-youtube icon-large"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="foot text-center">
+      <p>
+        Copyright © 2025 Shri Durga Public School All rights reserved<br />
+        Website Designed and maintained by
+        <a
+          href="https://bhavy-sharma.github.io/Desk-Warrior/"
+          class="nav-link inline"
+          >Desk Warriors</a
+        >
+      </p>
+    </div>
+  </footer>
+
+  <script>
+    const hamburger = document.querySelector(".hamburger");
+    const navMenu = document.querySelector("nav ul");
+
+    // Toggle menu on hamburger click
+    hamburger.addEventListener("click", (e) => {
+      e.stopPropagation();
+      hamburger.classList.toggle("active");
+      navMenu.classList.toggle("active");
+    });
+
+    // Close menu when clicking outside
+    document.addEventListener("click", (e) => {
+      if (!navMenu.contains(e.target) && !hamburger.contains(e.target)) {
+        hamburger.classList.remove("active");
+        navMenu.classList.remove("active");
+      }
+    });
+
+    // Close menu when clicking a link
+    document.querySelectorAll("nav ul li a").forEach((link) => {
+      link.addEventListener("click", () => {
+        hamburger.classList.remove("active");
+        navMenu.classList.remove("active");
+      });
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,305 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+    scroll-behavior: smooth;
+}
+
+/* Header Section */
+header {
+    background-color: #006400; /* Dark Green */
+    color: white;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header .logo h2 {
+    font-size: 2rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #ff7f50; /* Orange accent */
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('Blur.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+.hero-content h2 {
+    font-size: 3.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.hero-content p {
+    font-size: 1.4rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.hero-content button {
+    background-color: #ff7f50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.hero-content button:hover {
+    background-color: #ff6347;
+}
+
+/* Sports Section */
+.sports-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns layout */
+    gap: 40px;
+    padding: 60px 30px;
+    background-color: #fff;
+}
+
+.sport-section {
+    display: flex;
+    flex-direction: row; /* Aligning image and text side by side */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.sport-section:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+}
+
+.sport-content {
+    display: flex;
+    width: 100%;
+}
+
+.sport-image {
+    width: 50%;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: transform 0.3s ease;
+}
+
+.sport-info {
+    width: 50%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #f0f0f0;
+}
+
+.sport-info h2 {
+    font-size: 2rem;
+    color: #006400; /* Dark Green */
+    margin-bottom: 15px;
+}
+
+.sport-info p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #555;
+}
+.sport-image:hover {
+    transform: scale(1.1);
+}
+/* Responsive Design */
+@media (max-width: 1024px) {
+    /* Tablet and smaller screens */
+    header {
+        padding: 15px 25px;
+    }
+
+    nav ul {
+        gap: 15px;
+    }
+
+    nav ul li a {
+        font-size: 1.1rem;
+    }
+
+    .sports-container {
+        padding: 30px 20px;
+        grid-template-columns: 1fr 1fr; /* Two columns for medium screens */
+    }
+
+    .sport-section {
+        flex-direction: column; /* Stack image and text vertically */
+    }
+
+    .sport-image {
+        height: 280px;
+    }
+
+    .sport-info h2 {
+        font-size: 1.8rem;
+    }
+
+    .sport-info p {
+        font-size: 1.1rem;
+    }
+
+    .hero-content h2 {
+        font-size: 3rem;
+    }
+
+    .hero-content p {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Mobile devices */
+    header {
+        padding: 15px 20px;
+    }
+
+    header .logo h2 {
+        font-size: 1.6rem;
+    }
+
+    nav ul {
+        display: block;
+        text-align: center;
+        gap: 10px;
+    }
+
+    nav ul li {
+        display: block;
+    }
+
+    .sports-container {
+        grid-template-columns: 1fr; /* Stack sections vertically */
+        padding: 20px 10px;
+    }
+
+    .sport-section {
+        flex-direction: column; /* Stack image and text vertically */
+    }
+
+    .sport-image {
+        height: 250px;
+    }
+
+    .sport-info h2 {
+        font-size: 1.6rem;
+    }
+
+    .sport-info p {
+        font-size: 1rem;
+    }
+
+    .hero-content h2 {
+        font-size: 2.8rem;
+    }
+
+    .hero-content p {
+        font-size: 1.1rem;
+    }
+
+    footer {
+        padding: 20px;
+    }
+
+    footer p {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Extra Small Devices */
+    header {
+        padding: 10px 15px;
+    }
+
+    header .logo h2 {
+        font-size: 1.4rem;
+    }
+
+    nav ul {
+        display: block;
+        text-align: center;
+    }
+
+    nav ul li {
+        margin-bottom: 10px;
+    }
+
+    .sports-container {
+        padding: 15px;
+    }
+
+    .sport-section {
+        flex-direction: column; /* Stack image and text vertically */
+        margin-bottom: 20px;
+    }
+
+    .sport-image {
+        height: 28  0px;
+    }
+
+    .sport-info h2 {
+        font-size: 1.4rem;
+    }
+
+    .sport-info p {
+        font-size: 0.95rem;
+    }
+
+    .hero-content h2 {
+        font-size: 2.5rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+
+    footer p {
+        font-size: 0.8rem;
+    }
+}

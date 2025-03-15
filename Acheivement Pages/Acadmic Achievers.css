@@ -1,0 +1,74 @@
+/* Reset and Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+body {
+    background: linear-gradient(45deg, #28a745, #8bc34a);
+    color: #fff;
+    font-size: 16px;
+    overflow-x: hidden;
+    transition: background 0.5s ease-in-out;
+}
+h1{
+    font-size: 20px;
+}
+
+/* Toppers Section */
+.toppers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 50px 20px;
+    gap: 20px;
+    
+}
+
+.topper {
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 15px;
+    width: 280px;
+    text-align: center;
+    padding: 25px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 4px 4px 5px black;
+}
+
+.topper:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
+    box-shadow: 8px 8px 6px black;
+}
+
+.topper .rank {
+    background: #4caf50;
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.topper-img {
+    border-radius: 20px;
+    width: 180px;
+    height: 180px;
+    margin-bottom: 15px;
+    object-fit: cover;
+}
+
+.topper h3 {
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.topper p {
+    font-size: 1rem;
+    color: #ccc;
+}
+
