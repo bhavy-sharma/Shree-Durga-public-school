@@ -35,7 +35,7 @@ function incrementNumbers() {
         if (projectCount > 100 && clientCount > 200 && satisfactionPercent > 98 && teamCount > 30) {
             clearInterval(interval);
         }
-    }, 1); // Adjust speed by changing interval time
+    }, 100); // Adjust speed by changing interval time
 }
 
 // Start incrementing numbers when the page loads
