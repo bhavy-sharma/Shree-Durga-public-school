@@ -682,17 +682,25 @@
           const btn = card.querySelector(".show-more-btn");
           const content = card.querySelector(".card-content");
 
-          // Check if content needs a show more button
-          if (content.scrollHeight <= 300) {
-            btn.style.display = "none";
-          } else {
-            btn.addEventListener("click", () => {
-              card.classList.toggle("expanded");
-              btn.textContent = card.classList.contains("expanded")
-                ? "Show Less"
-                : "Show More";
-            });
-          }
+          // Initialize height check after a small delay to ensure content is rendered
+          setTimeout(() => {
+            if (content.scrollHeight <= 200) {
+              btn.style.display = "none";
+            } else {
+              card.style.maxHeight = "300px";
+              btn.addEventListener("click", () => {
+                if (card.classList.contains("expanded")) {
+                  card.style.maxHeight = "300px";
+                  card.classList.remove("expanded");
+                  btn.textContent = "Show More";
+                } else {
+                  card.style.maxHeight = content.scrollHeight + 60 + "px";
+                  card.classList.add("expanded");
+                  btn.textContent = "Show Less";
+                }
+              });
+            }
+          }, 100);
         });
       });
     </script>
