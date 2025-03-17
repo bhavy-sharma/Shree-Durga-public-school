@@ -179,7 +179,7 @@ nav ul {
   width: 100%;
   /* display: flex; */
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 
 nav li {
@@ -268,6 +268,20 @@ nav li ul a:hover {
   text-decoration: none;
 }
 
+.navbar-nav{
+  height: 45px;
+}
+.dropbtn{
+  padding: 9px;
+}
+@media (max-width:758px) {
+  .navbar-nav{
+    height: 100%;
+  }
+  .dropbtn{
+    padding: 16px;
+  }
+}
 @media (max-width: 768px) {
   .navbar {
     margin-top: 20vh;
@@ -941,7 +955,7 @@ footer {
 .dropbtn {
   background-color: #ffffff;
   color: rgb(0, 0, 0);
-  padding: 10px;
+  padding: 16px;
   font-size: 16px;
   border: none;
   transition: all 0.3s ease;
@@ -1129,3 +1143,6 @@ footer {
     display: block;
   }
 }
+
+
+
