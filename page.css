@@ -268,20 +268,6 @@ nav li ul a:hover {
   text-decoration: none;
 }
 
-.navbar-nav{
-  height: 45px;
-}
-.dropbtn{
-  padding: 9px;
-}
-@media (max-width:758px) {
-  .navbar-nav{
-    height: 100%;
-  }
-  .dropbtn{
-    padding: 16px;
-  }
-}
 @media (max-width: 768px) {
   .navbar {
     margin-top: 20vh;
@@ -1146,3 +1132,17 @@ footer {
 
 
 
+.navbar-nav{
+  height: 45px;
+}
+.dropbtn{
+  padding: 9px;
+}
+@media (max-width:758px) {
+  .navbar-nav{
+    height: 100%;
+  }
+  .dropbtn{
+    padding: 16px;
+  }
+}
