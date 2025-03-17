@@ -1101,3 +1101,31 @@ footer {
   box-shadow: none;
   transform: translateY(0);
 }
+
+.navbar-collapse {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background-color: white;
+  z-index: 1000;
+  padding: 1rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+@media (max-width: 991px) {
+  .navbar-collapse {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: auto;
+    max-height: 80vh;
+    overflow-y: auto;
+    transition: all 0.3s ease;
+    display: none;
+  }
+
+  .navbar-collapse.show {
+    display: block;
+  }
+}
