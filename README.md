@@ -75,4 +75,25 @@ Shree Durga Public School is dedicated to providing a dynamic educational experi
 
 ---
 
+
+# MEET OUR TEAM
+
+# Bhavy Sharma
+Testor hai bass galtiya Nikalta hai Baith ke orr koi kaam naa aate isse
+
+## Sakshi Jain
+The Main Coordinator in this Project which Handle and Organise all the Things
+
+## Mohd. Fazal ALi
+Also the Main Coordinator which help a alot in this project
+
+## Gagan Thankur
+This is the creator of About Us Page
+
+## Himanshu Gaur
+This is the Creator of Gallery Page
+
+## Aastha Sharma
+This is the Creator of Achivemnt Page
+
 **End of Document**
