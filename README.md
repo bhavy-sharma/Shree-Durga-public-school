@@ -79,7 +79,7 @@ Shree Durga Public School is dedicated to providing a dynamic educational experi
 # MEET OUR TEAM
 
 ## Bhavy Sharma
-The Mentor of this project, guiding the team and ensuring everything runs perfectly, while also handling testing.
+The Mentor of this project, guiding the team with expertise, ensuring flawless execution, and maintaining quality through effective testing. A source of motivation and a strong pillar of support for the team.
 
 ## Sakshi Jain
 The Main Coordinator in this Project which Handle and Organise all the Things
