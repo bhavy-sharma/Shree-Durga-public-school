@@ -78,8 +78,8 @@ Shree Durga Public School is dedicated to providing a dynamic educational experi
 
 # MEET OUR TEAM
 
-# Bhavy Sharma
-Testor hai bass galtiya Nikalta hai Baith ke orr koi kaam naa aate isse
+## Bhavy Sharma
+The Mentor of this project, guiding the team and ensuring everything runs perfectly, while also handling testing.
 
 ## Sakshi Jain
 The Main Coordinator in this Project which Handle and Organise all the Things
